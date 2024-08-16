@@ -5,15 +5,15 @@ import NextLink from 'components/reuseable/links/NextLink'; // -------- data ---
 import footerNav from 'data/footer';
 
 const Footer11 = () => {
-  return <footer className="bg-light">
-      <div className="container pb-13 pb-md-15">
+  return <footer className="bg-white">
+      <div className="container py-13 py-md-15">
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" alt="" />
+              <img className="mb-4" src="https://yophiel.net/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" alt="" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2024 yophiel.net <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -23,17 +23,17 @@ const Footer11 = () => {
 
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" className="link-body" />
-              <br /> 00 (123) 456 78 90
+              <h4 className="widget-title mb-3" style={{color: '#111'}}>Get in Touch</h4>
+              <address className="pe-xl-15 pe-xxl-17" >F-705, West Coast Park, Shivane, Pune, MH, IND 411 023</address>
+             <NextLink title="business@yophiel.net" href="mailto:business@yophiel.net" className="link-body" />
+              <br /> +91 9637 422525
             </div>
           </div>
 
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title mb-3">Learn More</h4>
-              <ul className="list-unstyled text-reset mb-0">
+              <h4 className="widget-title mb-3" style={{color: '#111'}}>Learn More</h4>
+              <ul className="list-unstyled text-reset mb-0" >
                 {footerNav.map(({
                 title,
                 url
@@ -46,8 +46,8 @@ const Footer11 = () => {
 
           <div className="col-md-12 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title mb-3">Our Newsletter</h4>
-              <p className="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+              <h4 className="widget-title mb-3" style={{color: '#111'}}>Our Newsletter</h4>
+              <p className="mb-5" >Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
 
               <div className="newsletter-wrapper">
                 <div id="mc_embed_signup2">
@@ -56,8 +56,8 @@ const Footer11 = () => {
                       <div className="mc-field-group input-group form-floating">
                         <input type="email" name="EMAIL" id="mce-EMAIL2" placeholder="Email Address" className="required email form-control" />
 
-                        <label htmlFor="mce-EMAIL2">Email Address</label>
-                        <input value="Join" type="submit" name="subscribe" id="mc-embedded-subscribe2" className="btn btn-primary btn-gradient gradient-1" />
+                        <label htmlFor="mce-EMAIL2" style={{color: '#111'}}>Email Address</label>
+                        <input value="Join" type="submit" name="subscribe" id="mc-embedded-subscribe2" className="btn btn-primary btn-gradient gradient-7" />
                       </div>
 
                       <div id="mce-responses2" className="clear">

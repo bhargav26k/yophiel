@@ -1,17 +1,8 @@
 const Director = ({
   className
 }) => {
-  return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className={`svg-inject icon-svg solid-duo ${className || 'icon-svg-sm text-grape-fuchsia me-4'}`}>
-      <path className="fill-primary" d="M163.78 19.12A42.63 42.63 0 00128 0c-18.54 0-34.77 11.81-40.14 28.34C74.26 31 64 42.66 64 56.53c0 15.89 13.42 28.8 29.92 28.8h63.3c19.18 0 34.78-15 34.78-33.43 0-16.22-12.08-29.87-28.22-32.78z" />
-      <path className="fill-secondary" d="M224 168a8 8 0 01-8-8v-16H40v16a8 8 0 01-16 0v-24a8 8 0 018-8h192a8 8 0 018 8v24a8 8 0 01-8 8z" />
-      <path className="fill-secondary" d="M128 170.67a8 8 0 01-8-8v-48a8 8 0 0116 0v48a8 8 0 01-8 8z" />
-      <circle className="fill-primary" cx="32" cy="197.33" r="16" />
-      <path className="fill-primary" d="M40 224H24a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z" />
-      <circle className="fill-primary" cx="128" cy="197.33" r="16" />
-      <path className="fill-primary" d="M136 224h-16a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z" />
-      <circle className="fill-primary" cx="224" cy="197.33" r="16" />
-      <path className="fill-primary" d="M232 224h-16a24 24 0 00-24 24 8 8 0 008 8h48a8 8 0 008-8 24 24 0 00-24-24z" />
-    </svg>;
+  return <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="svg-inject icon-svg solid-mono icon-svg-sm text-primary me-4"><g data-name="Layer 2"><path class="fill-secondary" d="M250.58 30.14l-56-19a8 8 0 00-5.16 0l-56 19a8 8 0 00-5.42 7.57v42.87c0 52.32 58.38 77.72 60.88 78.8a8.09 8.09 0 006.26 0c2.48-1.08 60.86-26.48 60.86-78.8V37.71a8 8 0 00-5.42-7.57zm-23.52 40.45l-29.33 37.33a10.66 10.66 0 01-15.33 1.5l-18.67-16a10.66 10.66 0 0113.87-16.19L187.82 86l22.47-28.57a10.66 10.66 0 0116.77 13.18z"></path><path class="fill-primary" d="M173.87 175.89c-2.56-1.28-5.23-2.67-8-4.37a20.31 20.31 0 018 4.37z"></path><path class="fill-primary" d="M192 234.67h-24v-22.93a21.33 21.33 0 10-16 0v22.93h-24V149a10.67 10.67 0 10-21.34 0v85.65H85.33V200a8 8 0 00-8-8H50.66a8 8 0 00-8 8v34.67H21.33V69.33H96a10.68 10.68 0 0010.67-10.67V40A18.7 18.7 0 0088 21.31H74.67V10.67a10.67 10.67 0 00-21.34 0v10.67H40A18.69 18.69 0 0021.33 40v8A21.36 21.36 0 000 69.33v176A10.66 10.66 0 0010.67 256H192a10.67 10.67 0 100-21.33z"></path><path class="fill-primary" d="M77.33 144H50.66a8 8 0 000 16h26.67a8 8 0 000-16zm0-64H50.66a8 8 0 000 16h26.67a8 8 0 000-16zm0 32H50.66a8 8 0 000 16h26.67a8 8 0 000-16z">
+    </path></g></svg>
 };
 
 export default Director;

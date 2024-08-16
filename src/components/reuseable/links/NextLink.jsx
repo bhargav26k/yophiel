@@ -7,7 +7,7 @@ const NextLink = props => {
     className,
     title
   } = props;
-  return <Link href={href} className={className}>
+  return <Link href={href} className={className} style={{ color: '#111' }}>
       {title}
     </Link>;
 };

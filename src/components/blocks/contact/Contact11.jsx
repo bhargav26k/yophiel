@@ -7,8 +7,8 @@ const Contact11 = () => {
       </div>
 
       <div className="col-lg-5 offset-lg-1">
-        <h2 className="fs-16 text-uppercase text-gradient gradient-1 mb-3">Contact Us</h2>
-        <h3 className="display-4 mb-8">Got any questions? Don't hesitate to get in touch.</h3>
+        <h1 className="fs-22 text-uppercase text-gradient gradient-7 mb-3">Contact Us</h1>
+        <h3 className="display- mb-8">Got any questions? Don't hesitate to get in touch.</h3>
         <div className="d-flex flex-row">
           <div>
             <svg viewBox="0 0 256 255.84" xmlns="http://www.w3.org/2000/svg" className="svg-inject icon-svg icon-svg-xs solid-duo text-grape-fuchsia mt-1 me-4" style={{
@@ -22,7 +22,7 @@ const Contact11 = () => {
 
           <div>
             <h5 className="mb-0">Address</h5>
-            <address>Moonshine St. 14/05 Light City, London</address>
+            <address>F-705, West Coast Park, Shivane, Pune, MH, IND 411 023</address>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ const Contact11 = () => {
           </div>
           <div>
             <h5 className="mb-0">Phone</h5>
-            <p>00 (123) 456 78 90</p>
+            <p>+91 9637 422525</p>
           </div>
         </div>
 
@@ -56,8 +56,8 @@ const Contact11 = () => {
           <div>
             <h5 className="mb-0">E-mail</h5>
             <p className="mb-0">
-              <a href="mailto:sandbox@email.com" className="link-body">
-                sandbox@email.com
+              <a href="mailto:business@yophiel.net" className="link-body">
+                business@yophiel.net
               </a>
             </p>
           </div>

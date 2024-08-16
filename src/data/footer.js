@@ -2,16 +2,19 @@ const footerNav = [{
   title: 'About Us',
   url: '#'
 }, {
-  title: 'Our Story',
+  title: 'Business Lines',
   url: '#'
 }, {
-  title: 'Projects',
+  title: 'Resources',
   url: '#'
 }, {
-  title: 'Terms of Use',
+  title: 'Downloads',
   url: '#'
 }, {
-  title: 'Privacy Policy',
+  title: 'Careers',
+  url: '#'
+}, {
+  title: 'Contact Us',
   url: '#'
 }];
 export const helps = [{

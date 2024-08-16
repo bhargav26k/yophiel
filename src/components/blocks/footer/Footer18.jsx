@@ -22,7 +22,7 @@ const Footer18 = () => {
               <img className="mb-4" src="/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" alt="" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2024 Linuxgate. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -32,7 +32,7 @@ const Footer18 = () => {
 
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title ls-sm mb-3">Get in Touch</h4>
+              <h4 className="widget-title ls-sm mb-3">RUshi</h4>
               <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
               <a href="mailto:#" className="link-body">
                 info@email.com
