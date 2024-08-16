@@ -1,38 +1,145 @@
-import NextLink from 'components/reuseable/links/NextLink';
-import { fadeInAnimate, slideInDownAnimate } from 'utils/animation';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const CustomPrevArrow = ({ onClick }) => {
+  return (
+    <button
+      type="button"
+      className="slick-prev slick-arrow"
+      style={{
+        display: 'block',
+        position: 'absolute',
+        left: '10px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 2,
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        borderRadius: '50%',
+        border: 'none',
+        width: '40px',
+        height: '40px',
+        color: '#fff',
+        cursor: 'pointer',
+      }}
+      onClick={onClick}
+    >
+      &#10094;
+    </button>
+  );
+};
+
+const CustomNextArrow = ({ onClick }) => {
+  return (
+    <button
+      type="button"
+      className="slick-next slick-arrow"
+      style={{
+        display: 'block',
+        position: 'absolute',
+        right: '10px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 2,
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        borderRadius: '50%',
+        border: 'none',
+        width: '40px',
+        height: '40px',
+        color: '#fff',
+        cursor: 'pointer',
+      }}
+      onClick={onClick}
+    >
+      &#10095;
+    </button>
+  );
+};
 
 const Hero18 = () => {
-  return <section className="wrapper bg-light">
-      <div className="container-card">
-        <div className="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-500 mt-2 mb-5" style={{
-        backgroundImage: 'url(/img/photos/bg22.png)'
-      }}>
-          <div className="card-body py-14 px-0">
-            <div className="container">
-              <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center text-center text-lg-start">
-                <div className="col-lg-6">
-                  <h1 className="display-2 mb-4 me-xl-5 me-xxl-0" style={slideInDownAnimate('900ms')}>
-                    Networking <span className="text-gradient gradient-1">solutions</span> for worldwide communication
-                  </h1>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+    swipeToSlide: true,
+    touchMove: true,
+    centerMode: true,
+    centerPadding: '0px',
+  };
 
-                  <p className="lead fs-23 lh-sm mb-7 pe-xxl-15" style={slideInDownAnimate('1200ms')}>
-                    We're a company that focuses on establishing long-term relationships with customers.
-                  </p>
+  const slides = [
+    {
+      id: 1,
+      image: 'https://yophiel.net/img/photos/bg28.jpg',
+      heading: 'Innovative Solutions',
+    },
+    {
+      id: 2,
+      image: 'https://yophiel.net/img/photos/bg29.jpg',
+      heading: 'Connecting the World',
+    },
+    {
+      id: 3,
+      image: 'https://yophiel.net/img/photos/bg30.jpg',
+      heading: 'Empowering Businesses',
+    },
+    {
+      id: 4,
+      image: 'https://yophiel.net/img/photos/bg31.jpg',
+      heading: 'Driving Innovation',
+    },
+  ];
 
-                  <div style={slideInDownAnimate('1500ms')}>
-                    <NextLink title="Explore Now" href="#" className="btn btn-lg btn-gradient gradient-1 rounded" />
-                  </div>
-                </div>
-
-                <div className="col-lg-6">
-                  <img alt="demo" className="img-fluid mb-n18" src="/img/illustrations/3d6.png" srcSet="/img/illustrations/3d6@2x.png 2x" style={fadeInAnimate('300ms')} />
-                </div>
-              </div>
+  return (
+    <section className="wrapper bg-light" style={{ margin: '0 25px', textAlign: 'center' }}>
+      <Slider {...settings}>
+        {slides.map((slide) => (
+          <div key={slide.id} className="container-card">
+            <div
+              className="card image-wrapper bg-full bg-image bg-overlay bg-overlay-dark-500"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                height: '80vh',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                position: 'relative',
+                borderRadius: '15px', // Adjust the border radius as needed
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                  borderRadius: '15px', // Inherit the border radius from the parent
+                }}
+              />
+              <h1
+                className="display-2"
+                style={{
+                  zIndex: 2,
+                  color: '#fff',
+                  fontWeight: 'bold',
+                }}
+              >
+                {slide.heading}
+              </h1>
             </div>
           </div>
-        </div>
-      </div>
-    </section>;
+        ))}
+      </Slider>
+    </section>
+  );
 };
 
 export default Hero18;
