@@ -116,28 +116,5 @@ import NextLink from 'components/reuseable/links/NextLink';
   }
 />
 `;
-const markup11 = `import { Navbar3 } from 'components/blocks/navbar';
 
-<Navbar3 logoAlt="logo-purple" navClassName="navbar navbar-expand-lg center-logo transparent navbar-light" />
-`;
-const markup12 = `import { Navbar3 } from 'components/blocks/navbar';
-
-<Navbar3 logoAlt="logo-light" navClassName="navbar navbar-expand-lg center-logo transparent navbar-dark" />
-`;
-const markup13 = `import { Navbar3 } from 'components/blocks/navbar';
-
-<Navbar3 logoAlt="logo-dark" navClassName="navbar navbar-expand-lg center-logo navbar-light navbar-bg-light" />
-`;
-const markup14 = `import { Navbar3 } from 'components/blocks/navbar';
-
-<Navbar3 logoAlt="logo-light" navClassName="navbar navbar-expand-lg center-logo navbar-dark navbar-bg-dark" />
-`;
-const markup15 = `import { Navbar2 } from 'components/blocks/navbar';
-
-<Navbar2 />
-`;
-const markup16 = `import { Navbar4 } from 'components/blocks/navbar';
-
-<Navbar4 />
-`;
 export { markup1, markup2, markup3, markup4, markup5, markup6, markup7, markup8, markup9, markup10, markup11, markup12, markup13, markup14, markup15, markup16 };

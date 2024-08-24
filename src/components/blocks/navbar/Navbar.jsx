@@ -17,7 +17,9 @@ import Signup from './partials/Signup';
 import Language from './partials/Language';
 import MiniCart from './partials/MiniCart'; // -------- data -------- //
 
-import { demos, pages, blogsNavigation, blocksNavigation, projectsNavigation, documentionNavigation } from 'data/navigation'; // ===================================================================
+import { demos, pages, blogsNavigation, blocksNavigation, projectsNavigation, documentionNavigation, aboutus } from 'data/navigation'; // ===================================================================
+import IconLink from 'components/reuseable/links/IconLink';
+import NavLinko from 'components/reuseable/links/NavLink';
 
 // ===================================================================
 const Navbar = props => {
@@ -49,149 +51,78 @@ const Navbar = props => {
 
   const headerContent = <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+        <NextLink href="/" title={<img alt="logo" src={`/img/yophiel-logo.png`} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
         <div className="offcanvas-header d-lg-none">
-          <h3 className="text-white fs-30 mb-0">Sandbox</h3>
+          <h3 className="text-white fs-30 mb-0">Yophiel</h3>
           <button type="button" aria-label="Close" data-bs-dismiss="offcanvas" className="btn-close btn-close-white" />
         </div>
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             {
-            /* ===================== demos nav item ===================== */
+            /* ===================== About us nav item ===================== */
           }
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Demos" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content mega-menu-scroll">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
-                    {demos.map(({
-                    id,
-                    title,
-                    url,
-                    thumnail
-                  }) => <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <img alt={title} src={`/img/demos/${thumnail}.jpg`} srcSet={`/img/demos/${thumnail}@2x.jpg 2x`} className="rounded lift d-none d-lg-block" />
-                            <span className="d-lg-none">{title}</span>
-                          </a>
-                        </Link>
-                      </li>)}
-                  </ul>
-
-                  <span className="d-none d-lg-flex">
-                    <i className="uil uil-direction" />
-                    <strong>Scroll to view more</strong>
-                  </span>
-                </li>
-              </ul>
-            </li>
-
-            {
-            /*  ===================== pages nav item  ===================== */
-          }
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Pages" className="nav-link dropdown-toggle" />
+          <li className="nav-item dropdown">
+              <DropdownToggleLink title="About Us" className="nav-link dropdown-toggle" />
 
               <ul className="dropdown-menu">
-                {pages.map(({
-                id,
-                title,
-                children
-              }) => {
-                return <li className="dropdown dropdown-submenu dropend" key={id}>
-                      <DropdownToggleLink title={title} className="dropdown-item dropdown-toggle" />
-                      <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                    </li>;
-              })}
-
-                <ListItemLink href="/pricing" title="Pricing" linkClassName="dropdown-item" />
+                <ListItemLink href="/whoweare" title="Who we are" linkClassName="dropdown-item" />
+                <ListItemLink href="/ourvalues" title="Our Values" linkClassName="dropdown-item" />
               </ul>
             </li>
 
             {
-            /* ===================== projects nav item  ===================== */
+            /*  ===================== business Lines nav item  ===================== */
           }
             <li className="nav-item dropdown">
-              <DropdownToggleLink title="Projects" className="nav-link dropdown-toggle" />
-
-              <div className="dropdown-menu dropdown-lg">
-                <div className="dropdown-lg-content">
-                  {projectsNavigation.map(({
-                  title,
-                  children
-                }, i) => <div key={title + i}>
-                      <h6 className="dropdown-header">{title}</h6>
-                      <ul className="list-unstyled">{renderLinks(children)}</ul>
-                    </div>)}
-                </div>
-              </div>
-            </li>
-
-            {
-            /* ===================== blog nav item ===================== */
-          }
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Blog" className="nav-link dropdown-toggle" />
+              <DropdownToggleLink title="Business Lines" className="nav-link dropdown-toggle" />
 
               <ul className="dropdown-menu">
-                {blogsNavigation.map(({
-                id,
-                url,
-                title,
-                children
-              }) => {
-                if (!url && children) {
-                  return <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Blog Posts" />
-                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                      </li>;
-                }
-
-                return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />;
-              })}
+                <ListItemLink href="/oilfield" title="Oilfield & Refinery Chemicals" linkClassName="dropdown-item" />
+                <ListItemLink href="/lubricants" title="Lubricants & Grease Additives" linkClassName="dropdown-item" />
+                <ListItemLink href="/personal" title="Personal & Home Care" linkClassName="dropdown-item" />
+                <ListItemLink href="/plastics" title="Plastics & Rubber" linkClassName="dropdown-item" />
+                <ListItemLink href="/treatment" title="Water Treatment Chemicals" linkClassName="dropdown-item" />
               </ul>
             </li>
 
             {
-            /* ===================== blocks nav item ===================== */
+            /* ===================== Resources nav item  ===================== */
+          }
+          <li className="nav-item dropdown">
+              <DropdownToggleLink title="Resources" className="nav-link dropdown-toggle" />
+
+              <ul className="dropdown-menu">
+                <ListItemLink href="/engneering" title="Engineering Services" linkClassName="dropdown-item" />
+                <ListItemLink href="/procurement" title="Procurement" linkClassName="dropdown-item" />
+                <ListItemLink href="/contracts" title="Maintenance Contracts" linkClassName="dropdown-item" />
+                
+              </ul>
+            </li>
+
+            {
+            /* ===================== careers nav item ===================== */
+          }
+            <li className="nav-item dropdown">
+              <NavLinko title="Careers" href="/career-2" className="nav-link" />
+            </li>
+
+            {
+            /* ===================== contact nav item ===================== */
           }
             <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Blocks" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
-                    {blocksNavigation.map(({
-                    id,
-                    thumnail,
-                    title,
-                    url
-                  }) => <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <div className="rounded img-svg d-none d-lg-block p-4 mb-lg-2">
-                              <img className="rounded-0" src={thumnail} alt="" />
-                            </div>
-
-                            <span>{title}</span>
-                          </a>
-                        </Link>
-                      </li>)}
-                  </ul>
-                </li>
-              </ul>
+              <NavLinko title="Contact Us" href="/contact-2" className="nav-link" />
+              
             </li>
 
             {
             /* ===================== documentation nav item ===================== */
           }
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Documentation" className="nav-link dropdown-toggle" />
+            {/* <li className="nav-item dropdown dropdown-mega">
+              <DropdownToggleLink title="Bak" className="nav-link dropdown-toggle" />
               <ul className="dropdown-menu mega-menu">
                 <li className="mega-menu-content">
                   <div className="row gx-0 gx-lg-3">
@@ -210,7 +141,7 @@ const Navbar = props => {
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
 
           {
@@ -218,9 +149,9 @@ const Navbar = props => {
         }
           <div className="offcanvas-footer d-lg-none">
             <div>
-              <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
+              <NextLink title="info@yophiel.net" className="link-inverse" href="mailto:info@yophiel.net" />
               <br />
-              <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+              <NextLink href="tel:9637422525" title="+91-9637422525" />
               <br />
               <SocialLinks />
             </div>
@@ -236,7 +167,7 @@ const Navbar = props => {
           {
           /* ============= language dropdwown ============= */
         }
-          {language && <Language />}
+          
 
           {
           /* ============= info button ============= */
@@ -259,22 +190,17 @@ const Navbar = props => {
           {
           /* ============= contact button ============= */
         }
-          {button && <li className="nav-item d-none d-md-block">{button}</li>}
+          
 
           {
           /* ============= shopping cart button ============= */
         }
-          {cart && <li className="nav-item">
-              <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas-cart" className="nav-link position-relative d-flex flex-row align-items-center">
-                <i className="uil uil-shopping-cart" />
-                <span className="badge badge-cart bg-primary">3</span>
-              </a>
-            </li>}
+
 
           {
           /* ============= social icons link ============= */
         }
-          {social && <Social />}
+
 
           {
           /* ============= humburger button for small device ============= */

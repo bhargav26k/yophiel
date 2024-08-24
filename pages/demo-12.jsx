@@ -3,7 +3,6 @@ import { Fragment } from 'react'; // -------- custom component -------- //
 import { Hero12 } from 'components/blocks/hero';
 import { Facts8 } from 'components/blocks/facts';
 import { About14 } from 'components/blocks/about';
-import { Navbar2 } from 'components/blocks/navbar';
 import { Footer4 } from 'components/blocks/footer';
 import { Contact6 } from 'components/blocks/contact';
 import { Process10 } from 'components/blocks/process';
@@ -20,7 +19,7 @@ const Demo12 = () => {
       /* ========== header ========== */
     }
       <header className="wrapper bg-soft-primary">
-        <Navbar2 />
+        <Navbar />
       </header>
 
       {
