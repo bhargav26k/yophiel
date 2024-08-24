@@ -13,12 +13,14 @@ const About19 = () => {
 
         <div className="col-lg-6">
           <h2 className="fs-16 text-uppercase text-gradient gradient-1 mb-3">Who Are We?</h2>
-          <h3 className="display-4 mb-4">Company that believes in the power of creative strategy.</h3>
+          <h3 className="display-4 mb-4"> Welcome from the global arena of Chemicals and Engineering, where excellence, innovation and performance meet.</h3>
           <p className="mb-6">
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur
-            et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-            bibendum nulla sed.
+          Yophiel Internationals is an internationally recognized chemical distribution and engineering services company, having been established in the western region of India in 2023.
+Ethics and integrity are the cornerstones upon which this firm was built, and we will endeavour to lead the industry in everything we do.
+Our innovative and value-added services include energy management, annual maintenance contracts, tolling and blending, and the procurement of raw materials.
+Our strong technical team and allied suppliers within the industry, enables us to strive for our customers and offer a wide range of performance oriented products.
+Our wide global network, in-depth knowledge of the industry, and extensive range of products enable us to support our clients with specialized solutions that maximize productivity and profitability.
+
           </p>
 
           <ListColumn rowClass="gx-xl-8" list={aboutList2} />
