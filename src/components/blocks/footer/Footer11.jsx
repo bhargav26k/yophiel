@@ -43,6 +43,7 @@ const Footer11 = () => {
               </ul>
             </div>
           </div>
+         
 
           <div className="col-md-12 col-lg-3">
             <div className="widget">
@@ -56,7 +57,7 @@ const Footer11 = () => {
                       <div className="mc-field-group input-group form-floating">
                         <input type="email" name="EMAIL" id="mce-EMAIL2" placeholder="Email Address" className="required email form-control" />
 
-                        <label htmlFor="mce-EMAIL2" style={{color: '#111'}}>Email Address</label>
+                        <label htmlFor="mce-EMAIL2" >Email Address</label>
                         <input value="Join" type="submit" name="subscribe" id="mc-embedded-subscribe2" className="btn btn-primary btn-gradient gradient-7" />
                       </div>
 
