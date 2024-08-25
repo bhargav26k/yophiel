@@ -72,8 +72,8 @@ const ContactTwo = () => {
                   <div>
                     <h5 className="mb-1">Address</h5>
                     <address>
-                      Moonshine St. 14/05 Light City, <br className="d-none d-md-block" />
-                      London, United Kingdom
+                    F-705, West Coast Park, <br className="d-none d-md-block" />
+                    Shivane, Pune, MH, IND 411 023
                     </address>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const ContactTwo = () => {
 
                   <div>
                     <h5 className="mb-1">Phone</h5>
-                    <p>00 (123) 456 78 90</p>
+                    <p>+91 9637 422525</p>
                   </div>
                 </div>
 
@@ -101,8 +101,8 @@ const ContactTwo = () => {
                   <div>
                     <h5 className="mb-1">E-mail</h5>
                     <p className="mb-0">
-                      <a href="mailto:sandbox@email.com" className="link-body">
-                        sandbox@email.com
+                      <a href="mailto:business@yophiel.net" className="link-body">
+                      business@yophiel.net
                       </a>
                     </p>
                   </div>

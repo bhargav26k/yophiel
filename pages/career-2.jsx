@@ -30,8 +30,8 @@ const CareerTwo = () => {
             <div className="row">
               <div className="col-lg-8 mx-auto mb-5">
                 <h2 className="fs-15 text-uppercase text-muted mb-3">Join Our Team</h2>
-                <h3 className="display-1 mb-6">Join our team to help shape the future of development.</h3>
-                <NextLink title="Explore Positions" href="#" className="btn btn-lg btn-primary rounded-pill" />
+                <h3 className="display-1 mb-6">Join our team to help shape the future of Engineering.</h3>
+                <NextLink title="Explore Positions" href="#job" className="btn btn-lg btn-primary rounded-pill" />
               </div>
             </div>
           </div>
@@ -97,9 +97,7 @@ const CareerTwo = () => {
                 <h2 className="fs-16 text-uppercase text-muted mb-3 mt-md-n5">What Makes Us Different?</h2>
                 <h3 className="display-3 mb-5">We bring solutions to make life easier for our customers.</h3>
                 <p className="mb-6">
-                  Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient
-                  montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada
-                  magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed.
+                Our focus is on creating meaningful impact through tailored services that address real-world challenges. We believe in delivering value through efficiency and excellence in everything we do.
                 </p>
 
                 <div className="row gy-8">
@@ -114,12 +112,12 @@ const CareerTwo = () => {
               </div>
             </div>
 
-            <hr className="my-14 my-md-17" />
+            <hr className="my-14 my-md-17" id="job"/>
 
             {
             /* ========== job position section ========== */
           }
-            <div className="row text-center">
+            <div className="row text-center" id="job">
               <div className="col-xl-10 mx-auto">
                 <h2 className="fs-15 text-uppercase text-muted mb-3">Job Positions</h2>
                 <h3 className="display-4 mb-10 px-xxl-15">
@@ -131,19 +129,7 @@ const CareerTwo = () => {
             <div className="row">
               <div className="col-xl-10 mx-auto">
                 <form className="filter-form mb-10">
-                  <div className="row">
-                    <div className="col-md-4 mb-3">
-                      <Select options={data.positionOptions} />
-                    </div>
-
-                    <div className="col-md-4 mb-3">
-                      <Select options={data.typeOptions} />
-                    </div>
-
-                    <div className="col-md-4 mb-3">
-                      <Select options={data.locationOptions} />
-                    </div>
-                  </div>
+                  
                 </form>
 
                 <div className="job-list mb-10">
@@ -171,9 +157,9 @@ const CareerTwo = () => {
               <div className="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
                 <h2 className="fs-15 text-uppercase text-muted mb-3">Can't find the right position?</h2>
                 <h3 className="display-4 mb-7 px-lg-5 px-xl-0 px-xxl-5">
-                  We are a community with 5000+ team members. Join and build the future with us.
+                  We are a community with 100+ team members. Join and build the future with us.
                 </h3>
-                <NextLink title="Contact Us" href="#" className="btn btn-lg btn-primary rounded-pill" />
+                <NextLink title="Contact Us" href="./contact-2" className="btn btn-lg btn-primary rounded-pill" />
               </div>
             </div>
           </div>

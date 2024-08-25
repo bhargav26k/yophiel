@@ -2,59 +2,55 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const CustomPrevArrow = ({ onClick }) => {
-  return (
-    <button
-      type="button"
-      className="slick-prev slick-arrow"
-      style={{
-        display: 'block',
-        position: 'absolute',
-        left: '10px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        zIndex: 2,
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        borderRadius: '50%',
-        border: 'none',
-        width: '40px',
-        height: '40px',
-        color: '#fff',
-        cursor: 'pointer',
-      }}
-      onClick={onClick}
-    >
-      &#10094;
-    </button>
-  );
-};
+const CustomPrevArrow = ({ onClick }) => (
+  <button
+    type="button"
+    className="slick-prev slick-arrow"
+    style={{
+      display: 'block',
+      position: 'absolute',
+      left: '10px',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      zIndex: 2,
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+      borderRadius: '50%',
+      border: 'none',
+      width: '40px',
+      height: '40px',
+      color: '#fff',
+      cursor: 'pointer',
+    }}
+    onClick={onClick}
+  >
+    &#10094;
+  </button>
+);
 
-const CustomNextArrow = ({ onClick }) => {
-  return (
-    <button
-      type="button"
-      className="slick-next slick-arrow"
-      style={{
-        display: 'block',
-        position: 'absolute',
-        right: '10px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        zIndex: 2,
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        borderRadius: '50%',
-        border: 'none',
-        width: '40px',
-        height: '40px',
-        color: '#fff',
-        cursor: 'pointer',
-      }}
-      onClick={onClick}
-    >
-      &#10095;
-    </button>
-  );
-};
+const CustomNextArrow = ({ onClick }) => (
+  <button
+    type="button"
+    className="slick-next slick-arrow"
+    style={{
+      display: 'block',
+      position: 'absolute',
+      right: '10px',
+      top: '50%',
+      transform: 'translateY(-50%)',
+      zIndex: 2,
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+      borderRadius: '50%',
+      border: 'none',
+      width: '40px',
+      height: '40px',
+      color: '#fff',
+      cursor: 'pointer',
+    }}
+    onClick={onClick}
+  >
+    &#10095;
+  </button>
+);
 
 const Hero18 = () => {
   const settings = {
@@ -100,9 +96,9 @@ const Hero18 = () => {
     <section className="wrapper bg-light" style={{ margin: '0 25px', textAlign: 'center' }}>
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="container-card">
+          <figure key={slide.id} className="rounded-container">
             <div
-              className="card image-wrapper bg-full bg-image bg-overlay bg-overlay-dark-500"
+              className="card image-wrapper rounded"
               style={{
                 backgroundImage: `url(${slide.image})`,
                 height: '80vh',
@@ -110,7 +106,7 @@ const Hero18 = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 position: 'relative',
-                borderRadius: '15px', // Adjust the border radius as needed
+                overflow: 'hidden', // Ensure the border radius is respected
               }}
             >
               <div
@@ -121,7 +117,7 @@ const Hero18 = () => {
                   right: 0,
                   bottom: 0,
                   backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                  borderRadius: '15px', // Inherit the border radius from the parent
+                  borderRadius: 'inherit', // Ensure overlay respects border radius
                 }}
               />
               <h1
@@ -135,9 +131,42 @@ const Hero18 = () => {
                 {slide.heading}
               </h1>
             </div>
-          </div>
+          </figure>
         ))}
       </Slider>
+      <style jsx>{`
+        .rounded-container {
+          padding: 10px;
+          border-radius: 15px;
+          overflow: hidden; /* Prevents overflow and maintains the rounded corners */
+        }
+
+        .image-wrapper {
+          background-size: cover;
+          background-position: center;
+          border-radius: 15px; /* Apply consistent border radius */
+        }
+
+        @media (max-width: 768px) {
+          .image-wrapper {
+            border-radius: 10px;
+          }
+
+          .display-2 {
+            font-size: 2rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .image-wrapper {
+            border-radius: 8px;
+          }
+
+          .display-2 {
+            font-size: 1.5rem;
+          }
+        }
+      `}</style>
     </section>
   );
 };

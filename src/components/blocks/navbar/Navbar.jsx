@@ -20,6 +20,7 @@ import MiniCart from './partials/MiniCart'; // -------- data -------- //
 import { demos, pages, blogsNavigation, blocksNavigation, projectsNavigation, documentionNavigation, aboutus } from 'data/navigation'; // ===================================================================
 import IconLink from 'components/reuseable/links/IconLink';
 import NavLinko from 'components/reuseable/links/NavLink';
+import Buttono from 'components/reuseable/links/Buttono';
 
 // ===================================================================
 const Navbar = props => {
@@ -121,27 +122,13 @@ const Navbar = props => {
             {
             /* ===================== documentation nav item ===================== */
           }
-            {/* <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Bak" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu">
-                <li className="mega-menu-content">
-                  <div className="row gx-0 gx-lg-3">
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Usage</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(documentionNavigation.usage)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Styleguide</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(documentionNavigation.styleguide)}</ul>
-                    </div>
-
-                    <div className="col-lg-8">
-                      <h6 className="dropdown-header">Elements</h6>
-                      <ul className="list-unstyled cc-3">{renderLinks(documentionNavigation.elements)}</ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li> */}
+          <li className="nav-item dropdown dropdown-mega">
+          <Buttono
+  title="Download Brochure"
+  className="nav-link"
+  downloadLink="https://pdfobject.com/pdf/sample.pdf"
+/>
+            </li>
           </ul>
 
           {
@@ -190,7 +177,7 @@ const Navbar = props => {
           {
           /* ============= contact button ============= */
         }
-          
+          {/* {button && <li className="nav-item d-none d-md-block">{button}</li>} */}
 
           {
           /* ============= shopping cart button ============= */

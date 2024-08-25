@@ -3,8 +3,8 @@ import TeleMarketer from 'icons/lineal/TeleMarketer';
 
 const Contact7 = () => {
   return <section className="wrapper bg-light angled upper-end lower-end">
-      <div className="container pt-18 pb-14 pt-md-19 pb-md-16">
-        <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center">
+      <div className="container pb-5 ">
+        <div className="row  gx-xl-12 gy-10 align-items-center">
           <div className="col-md-8 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1 position-relative">
             <div className="shape bg-dot primary rellax w-17 h-21" style={{
             top: '-2rem',
@@ -12,7 +12,7 @@ const Contact7 = () => {
           }} />
 
             <figure className="rounded">
-              <img src="/img/photos/about4.jpg" srcSet="/img/photos/about4@2x.jpg 2x" alt="" />
+              <img src="/img/contacthome.jpg" srcSet="/img/photos/about4@2x.jpg 2x" alt="" />
             </figure>
           </div>
 
@@ -28,8 +28,9 @@ const Contact7 = () => {
               <div>
                 <h5 className="mb-1">Address</h5>
                 <address>
-                  Moonshine St. 14/05 Light City, <br className="d-none d-md-block" />
-                  London, United Kingdom
+                F-705, West Coast Park,
+                <br className="d-none d-md-block" />
+                Shivane, Pune, MH, IND 411 023
                 </address>
               </div>
             </div>
@@ -41,7 +42,7 @@ const Contact7 = () => {
 
               <div>
                 <h5 className="mb-1">Phone</h5>
-                <p>00 (123) 456 78 90</p>
+                <p>+91 9637 422525</p>
               </div>
             </div>
 
@@ -53,8 +54,8 @@ const Contact7 = () => {
               <div>
                 <h5 className="mb-1">E-mail</h5>
                 <p className="mb-0">
-                  <a href="mailto:sandbox@email.com" className="link-body">
-                    sandbox@email.com
+                  <a href="mailto:business@yophiel.net" className="link-body">
+                  business@yophiel.net
                   </a>
                 </p>
               </div>

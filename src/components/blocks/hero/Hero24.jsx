@@ -4,10 +4,10 @@ const images = ['/img/photos/cf1.jpg', '/img/photos/cf2.jpg', '/img/photos/cf3.j
 
 const Hero24 = () => {
   return <section id="home">
-      <div className="wrapper bg-gray overflow-hidden">
+      <div className="wrapper bg-white overflow-hidden">
         <div className="container-fluid px-xl-0 pt-6 pb-10">
-          <div className="swiper-container swiper-auto">
-            <Carousel className="overflow-visible" grabCursor slidesPerView="auto" centeredSlides loop>
+          <div className="swiper-container swiper-auto ">
+            <Carousel className="overflow-visible" grabCursor slidesPerView="1.03" centeredSlides loop>
               {images.map(item => <figure className="rounded" key={item}>
                   <img src={item} alt="" />
                   <a className="item-link" href={item} data-glightbox data-gallery="gallery-group">

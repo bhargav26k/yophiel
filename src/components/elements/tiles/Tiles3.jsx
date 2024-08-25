@@ -20,7 +20,7 @@ const Tiles3 = () => {
             <div className="card bg-pale-primary text-center">
               <div className="card-body py-11 counter-wrapper">
                 <h3 className="counter text-nowrap">
-                  <CountUp end={5000} suffix="+" />
+                  <CountUp end={50} suffix="+" />
                 </h3>
 
                 <p className="mb-0">Satisfied Customers</p>

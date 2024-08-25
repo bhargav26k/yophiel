@@ -8,33 +8,34 @@ const facilities = [{
   id: 1,
   Icon: Target,
   title: 'Career Growth',
-  description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+  description: `Unlock your potential with our strategic opportunities designed to accelerate your career. Stay ahead with continuous learning and growth at every step.`
 }, {
   id: 2,
   Icon: VideoCall,
   title: 'Work From Anywhere',
-  description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+  description: `Experience the freedom to work from any location with a reliable internet connection, ensuring you stay productive and connected wherever you want to be.`
 }, {
   id: 3,
   Icon: Wallet,
   title: 'Smart Salary',
-  description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+  description: `Benefit from a competitive salary structure designed to reward performance, ensuring fair compensation and financial growth tailored to your achievements.`
 }, {
   id: 4,
   Icon: Alarm,
   title: 'Flexible Hours',
-  description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+  description: `Enjoy the flexibility to manage your work schedule, balancing commitments while maintaining productivity in a way that suits your lifestyle.`
 }];
+
 const services = [{
   id: 1,
   Icon: Share,
   title: 'Our Mission',
-  description: 'Curabitur blandit lacus porttitor ridiculus mus.'
+  description: 'To empower businesses with cutting-edge technology and services that drive growth, sustainability, and success.'
 }, {
   id: 2,
   Icon: PartnerShip,
   title: 'Our Values',
-  description: 'Curabitur blandit lacus porttitor ridiculus mus.'
+  description: 'We are committed to integrity, and innovation, ensuring our actions align with the needs of our customers.'
 }];
 const designJobList = [{
   id: 1,

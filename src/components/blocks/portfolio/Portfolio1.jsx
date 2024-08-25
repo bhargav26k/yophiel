@@ -9,10 +9,10 @@ const Portfolio1 = () => {
       slidesPerView: 1
     },
     768: {
-      slidesPerView: 2
+      slidesPerView: 1
     },
     992: {
-      slidesPerView: 3
+      slidesPerView: 1
     }
   };
   return <div className="container-fluid px-md-6">
