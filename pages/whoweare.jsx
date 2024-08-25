@@ -28,7 +28,7 @@ const Whoweare = () => {
           <div className="container pt-10 pt-md-14 text-center">
             <div className="row">
               <div className="col-xl-6 mx-auto">
-                <h1 className="display-1 mb-4">Hello! This is Sandbox</h1>
+                <h1 className="display-1 mb-4">Hello! This is Yophiel</h1>
                 <p className="lead fs-lg mb-0">A company turning ideas into beautiful things.</p>
               </div>
             </div>
@@ -51,29 +51,30 @@ const Whoweare = () => {
             {
             /* ========== process section ========== */
           }
-            <Process7 />
+            {/* <Process7 /> */}
+        <Contact7 />
+
           </div>
         </section>
 
         {
         /* ========== testimonial section ========== */
       }
-        <Testimonial5 />
+        {/* <Testimonial5 /> */}
 
         {
         /* ========== team section ========== */
       }
-        <Team3 />
+        {/* <Team3 /> */}
 
         {
         /* ========== facts section ========== */
       }
-        <Facts5 />
+        {/* <Facts5 /> */}
 
         {
         /* ========== contact section ========== */
       }
-        <Contact7 />
       </main>
 
       {

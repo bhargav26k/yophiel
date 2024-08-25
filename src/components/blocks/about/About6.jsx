@@ -16,13 +16,11 @@ const About6 = () => {
         <h2 className="display-4 mb-3">Who Are We?</h2>
 
         <p className="lead fs-lg">
-          We are a digital and branding company that believes in the power of creative strategy and along with great
-          design.
+        Welcome to the global arena of Chemicals and Engineering, where excellence, innovation and performance meet.
         </p>
 
         <p className="mb-6">
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus
-          ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        Yophiel Internationals is an internationally recognized chemical distribution and engineering services company, having been established in the western region of India in 2023.
         </p>
 
         <ListColumn rowClass="gx-xl-8" list={aboutList2} />

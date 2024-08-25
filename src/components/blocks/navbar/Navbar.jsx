@@ -52,7 +52,7 @@ const Navbar = props => {
 
   const headerContent = <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/yophiel-logo.png`} />} />
+        <NextLink href="/" title={<img alt="logo" src={`/img/yophiel-logo-trans.png`} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
