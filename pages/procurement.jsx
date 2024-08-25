@@ -23,20 +23,27 @@ const ProjectDetails = () => {
         {
         /* ========== heading section ========== */
       }
-        <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-        backgroundImage: 'url(/img/photos/bg6.jpg)'
-      }}>
+        <section 
+  className="wrapper image-wrapper bg-image bg-overlay text-white" 
+  style={{
+    backgroundImage: 'url(https://odblogs.zohowebstatic.com/sites/qntrl-blog/files/qntrl-blog/introduction_to_procurement.jpeg)',
+    filter: 'blur(0.35px)',  // Adjust the blur intensity here
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }}>
+
+
           <div className="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
             <div className="row">
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
-                  <div className="post-category text-line text-white">
-                    <NextLink title="Identity" href="#" className="text-reset" />
-                  </div>
+                  {/* <div className="post-category text-line text-white">
+                    <NextLink title="" href="#" className="text-reset" />
+                  </div> */}
 
-                  <h1 className="display-1 mb-3 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
-                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
+                  <h1 className="display-1 mb-3 text-white">PROCUREMENT</h1>
+                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-2">
+                  sourcing high-quality materials, ensuring compliance with safety and environmental standards, and fostering strong relationships with reliable suppliers to maintain a seamless supply chain.
                   </p>
                 </div>
               </div>

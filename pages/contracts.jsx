@@ -24,7 +24,7 @@ const ProjectDetails = () => {
         /* ========== heading section ========== */
       }
         <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-        backgroundImage: 'url(/img/photos/bg6.jpg)'
+        backgroundImage: 'url(https://www.valuepointsystems.com/wp-content/uploads/2024/07/Untitled-1400-x-950-px-4.jpg)'
       }}>
           <div className="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
             <div className="row">
@@ -34,10 +34,10 @@ const ProjectDetails = () => {
                     <NextLink title="Identity" href="#" className="text-reset" />
                   </div>
 
-                  <h1 className="display-1 mb-3 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
-                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
+                  <h1 className="display-1 mb-3 text-white">MAINTAINANCE CONTRACT</h1>
+                  {/* <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
                     Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

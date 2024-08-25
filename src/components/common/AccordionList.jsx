@@ -3,18 +3,28 @@ import Accordion from 'components/reuseable/accordion'; // -------- data -------
 const accordions = [{
   no: 'One',
   expand: true,
-  heading: 'Professional Design',
-  body: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.'
+  heading: 'INTEGRITY',
+  body: 'Integrity is much more about being whole, entire, and undiminished. It is about every single individual digging to their core. It is what makes us trustworthy,fair, honest, transparent and ethical in our conduct.'
 }, {
   no: 'Two',
   expand: false,
-  heading: 'Top-Notch Support',
-  body: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.'
+  heading: 'RESPONSIBILITY',
+  body: 'We will incorporate social values in our business, making sure that what comes from the people are returned to them many times over. '
 }, {
   no: 'Three',
   expand: false,
-  heading: 'Header and Slider Options',
-  body: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.'
+  heading: 'EXCELLENCE',
+  body: 'We will be passionate about achieving the highest standards of quality.'
+},{
+  no: 'Four',
+  expand: false,
+  heading: 'UNITY',
+  body: 'We will invest in our people and partners, enable continuous learning, and build caring and collaborative relationships based on trust and mutual respect.'
+},{
+  no: 'Five',
+  expand: false,
+  heading: 'RESPECTFUL',
+  body: 'We look out for each other and promote open communication that supports our development as individuals and as an organization. We support constructive dialogue and active listening while respecting cultural diversity.'
 }];
 
 const AccordionList = () => {
