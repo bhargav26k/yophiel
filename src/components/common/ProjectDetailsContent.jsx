@@ -13,32 +13,28 @@ const ProjectDetailsContent = ({
         <div className={contentRowClass}>
           <div className="col-md-9 text-justify">
             <p>
-              Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis. Etiam
-              porta sem malesuada magna mollis euismod. Aenean lacinia bibendum.
+            Yophiel Internationals provides a comprehensive range of cutting-edge chemicals specifically formulated for oilfield and refinery applications. These solutions are engineered to address the unique challenges faced in the oil and gas industry, including extreme conditions, complex operations, and the need for high performance
             </p>
             <p>
-              Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Aenean eu leo
-              quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis.
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+           Our chemicals are designed to enhance the efficiency and safety of various processes in the oilfield and refinery sectors. Whether it's in drilling, production, refining, or maintenance, our products are developed to deliver consistent, reliable results that boost overall productivity.
+
             </p>
           </div>
 
           <div className="col-md-2 ms-auto">
             <ul className="list-unstyled">
               <li>
-                <h5 className="mb-1">Date</h5>
-                <p>17 May 2018</p>
+                <h5 className="mb-1"></h5>
+                <p></p>
               </li>
 
               <li>
-                <h5 className="mb-1">Client Name</h5>
-                <p>Cool House</p>
+                <h5 className="mb-1"></h5>
+                <p></p>
               </li>
             </ul>
 
-            <NextLink title="See Project" href="#" className="more hover" />
+            {/* <NextLink title="See Project" href="#" className="more hover" /> */}
           </div>
         </div>
       </div>

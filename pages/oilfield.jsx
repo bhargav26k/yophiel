@@ -11,7 +11,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
 import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation'; // -------- data -------- //
 
-const images = ['/img/photos/pp2.jpg', '/img/photos/pp3.jpg', '/img/photos/pp4.jpg', '/img/photos/pp5.jpg'];
+const images = ['/img/photos/oilfield.jpeg', '/img/photos/refinary.jpeg', '/img/photos/chemicals.jpeg', '/img/photos/chem.jpeg'];
 
 const ProjectDetails = () => {
   // used for image lightbox
@@ -36,9 +36,9 @@ const ProjectDetails = () => {
                     <NextLink title="Identity" href="#" className="hover" />
                   </div>
 
-                  <h1 className="display-1 mb-3">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                  <h1 className="display-1 mb-3">Oilfield & Refinery Chemicals</h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
+                  We provide specialized chemicals designed to optimize performance in oilfield and refinery operations.
                   </p>
                 </div>
               </div>
@@ -51,9 +51,9 @@ const ProjectDetails = () => {
             <div className="row">
               <div className="col-12">
                 <article className="mt-n21">
-                  <FigureImage width={2400} height={1640} src="/img/photos/pp1.jpg" className="rounded mb-8 mb-md-12" />
+                  {/* <FigureImage width={2400} height={1640} src="/img/photos/download.jpg" className="rounded mb-8 mb-md-12" /> */}
 
-                  <ProjectDetailsContent title="About the Project" />
+                  <ProjectDetailsContent title="About the YOPHIEL Oilfield And Refinery Chemicals" />
 
                   <div className="row mt-5 gx-md-6 gy-6">
                     {images.map(item => <div className="item col-md-6" key={item}>
@@ -70,22 +70,15 @@ const ProjectDetails = () => {
 
                   <div className="row mt-8 mt-md-12">
                     <div className="col-md-10 offset-md-1 text-justify">
-                      <h2 className="mb-4">Quam Mollis Bibendum</h2>
+                      <h2 className="mb-4"> YOPHIEL Performance</h2>
                       <p>
-                        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non
-                        metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia
-                        bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Praesent commodo cursus
-                        magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.
-                        Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet
-                        fermentum.
+                      Our products enhance productivity, efficiency, and safety in oil and gas exploration, production, and refining.<br></br>
+                      Global Network: Leveraging our global connections, we ensure the availability of high-quality chemicals tailored to industry needs.
                       </p>
 
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat
-                        porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Maecenas
-                        sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum
-                        etiam porta.
+                      Technical Expertise: Supported by a strong technical team, we offer solutions that meet the specific requirements of oilfield and refinery operations.<br></br>
+                      Value-Added Services: Our offerings include energy management, tolling, blending, and procurement services, aimed at maximizing operational efficiency.
                       </p>
                     </div>
                   </div>
