@@ -19,9 +19,11 @@ const Portfolio1 = () => {
       <div className="swiper-container blog grid-view mb-17 mb-md-19">
         <Carousel grabCursor breakpoints={carouselBreakpoints}>
           {portfolioList1.map(item => <figure className="rounded" key={item}>
-              <Image width={900} height={650} src={item} alt="project" style={{
+              <Image width={500} height={350} src={item} alt="project" style={{
             width: '100%',
-            height: 'auto'
+            height: 'auto',
+           
+            
           }} />
             </figure>)}
         </Carousel>

@@ -24,20 +24,19 @@ const ProjectDetails = () => {
         /* ========== heading section ========== */
       }
         <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-        backgroundImage: 'url(/img/photos/bg6.jpg)'
+        backgroundImage: 'url(/img/photos/bg29.jpg)'
       }}>
           <div className="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
             <div className="row">
               <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div className="post-header">
                   <div className="post-category text-line text-white">
-                    <NextLink title="Identity" href="#" className="text-reset" />
+                    <NextLink title="Yophiel" href="#" className="text-reset" />
                   </div>
 
-                  <h1 className="display-1 mb-3 text-white">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                  <h1 className="display-1 mb-3 text-white">Engineering Services</h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
-                  </p>
+                  Yophiel Internationals offers comprehensive engineering services from basic design to plant commissioning, including procurement, 3D modeling, instrumentation, piping, civil design, site work, and energy management.  </p>
                 </div>
               </div>
             </div>
@@ -49,7 +48,7 @@ const ProjectDetails = () => {
           /* ========== details section ========== */
         }
           <div className="container pt-14 pt-md-16 pb-13 pb-md-15">
-            <ProjectDetailsContent title="About the Project" />
+            <ProjectDetailsContent title="About the Yophiel" />
           </div>
 
           {

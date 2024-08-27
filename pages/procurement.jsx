@@ -56,7 +56,7 @@ const ProjectDetails = () => {
           /* ========== details section ========== */
         }
           <div className="container pt-14 pt-md-16 pb-13 pb-md-15">
-            <ProjectDetailsContent title="About the Project" />
+            <ProjectDetailsContent title="About the YOPHIEL" />
           </div>
 
           {

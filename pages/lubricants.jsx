@@ -17,8 +17,8 @@ import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation
 const images = [
   '/img/photos/Greaseimg.jpeg',
   '/img/photos/images.jpeg',
-  '/img/photos/lubricant.jpeg',
-  '/img/photos/images (1).jpeg',
+  '/img/photos/Grease oil.png',
+  '/img/photos/automotiveoil.png',
 ];
 
 const ProjectDetails = () => {
@@ -83,11 +83,11 @@ const ProjectDetails = () => {
                       <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
                         <a href={item} data-glightbox data-gallery="project-1">
                           <Image
-                            width={960}
+                            width={1060}
                             height={640}
                             src={item}
                             alt="demo"
-                            style={{ width: '80%', height: '80%', display: 'block' }}
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
                           />
                         </a>
                       </figure>

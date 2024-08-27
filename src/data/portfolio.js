@@ -1,5 +1,5 @@
 // used in the portfolio-1 block
-export const portfolioList1 = ['/img/photos/pp10.jpg', '/img/photos/pp11.jpg', '/img/photos/pp12.jpg', '/img/photos/pp13.jpg', '/img/photos/pp14.jpg', '/img/photos/pp15.jpg', '/img/photos/pp16.jpg']; // used in the portfolio-1 block
+export const portfolioList1 = ['/img/photos/bg28.jpg', '/img/photos/bg29.jpg', '/img/photos/bg30.jpg', '/img/photos/bg31.jpg', '/img/photos/bg28.jpg', '/img/photos/bg29.jpg', '/img/photos/bg30.jpg']; // used in the portfolio-1 block
 
 export const portfolioList2 = [{
   id: 0,
