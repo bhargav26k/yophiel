@@ -72,12 +72,12 @@ const ProjectDetails = () => {
         >
           <div style={{ padding: '0 1rem', maxWidth: '1200px', margin: '0 auto' }}>
             <div>
-              <article style={{ marginTop: '-5rem' }}>
+              <article style={{ marginTop: '-5rem', justifyContent:'center',alignItems: 'center', margin:'auto' }}>
                 <FigureImage width={2400} height={1640} src="/img/photos/HowGrease.jpg" className="rounded mb-8 mb-md-12" />
 
                 <ProjectDetailsContent title="About the Yophiel" />
 
-                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', width:'80%', margin:'auto' }}>
                   {images.map((item) => (
                     <div style={{ flex: '1 1 calc(50% - 1.5rem)', boxSizing: 'border-box' }} key={item}>
                       <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
@@ -90,6 +90,7 @@ const ProjectDetails = () => {
                             style={{ width: '100%', height: 'auto', display: 'block' }}
                           />
                         </a>
+
                       </figure>
                     </div>
                   ))}
@@ -108,39 +109,39 @@ const ProjectDetails = () => {
                       <br />
                       </p>
                     <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li>Engine Oils: For automotive, industrial, and marine applications.</li>
-                      <li>Gear Oils: For gearboxes and transmissions.</li>
-                      <li>Hydraulic Oils: For hydraulic systems.</li>
-                      <li>Greases: For various industrial and automotive applications.</li>
-                      <li>Specialty Lubricants: For unique and demanding applications.</li>
+                      <li><b>Engine Oils:</b> For automotive, industrial, and marine applications.</li>
+                      <li><b>Gear Oils:</b> For gearboxes and transmissions.</li>
+                      <li><b>Hydraulic Oils:</b> For hydraulic systems.</li>
+                      <li><b>Greases:</b> For various industrial and automotive applications.</li>
+                      <li><b>Specialty Lubricants:</b> For unique and demanding applications.</li>
                     </ul>
                     <p>
                       Grease Additive Distribution: We provide essential additives to enhance the performance of greases, such as:
                     </p>
                     <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li>Lithium Hydroxide: Improves water resistance and stability.</li>
-                      <li>Friction Modifiers: Reduce friction and wear.</li>
-                      <li>Pour Point Depressants: Improve low-temperature performance.</li>
-                      <li>Antiwear Additives: Protect against wear and extend equipment life.</li>
-                      <li>Anti-Foaming Agents: Prevent foam formation and maintain optimal lubrication.</li>
-                      <li>Extreme Pressure Additives: Provide protection under high-pressure conditions.</li>
-                      <li>Tackifiers: Improve adhesive properties and prevent slippage.</li>
-                      <li>Antioxidants: Protect against oxidation and prolong lubricant life.</li>
-                      <li>TBN Boosters: Neutralize acidic contaminants and prevent corrosion.</li>
-                      <li>ZDDP: A versatile additive for antiwear and extreme pressure protection.</li>
-                      <li>Molybdenum Disulfide: Provides excellent lubricity and wear resistance.</li>
-                      <li>Viscosity Improvers: Maintain viscosity over a wide temperature range.</li>
-                      <li>Base Oils: The foundation of lubricants, available in various groups (I, II, III, IV) to meet different performance requirements.</li>
+                      <li><b>Lithium Hydroxide:</b> Improves water resistance and stability.</li>
+                      <li><b>Friction Modifiers:</b> Reduce friction and wear.</li>
+                      <li><b>Pour Point Depressants:</b> Improve low-temperature performance.</li>
+                      <li><b>Antiwear Additives:</b> Protect against wear and extend equipment life.</li>
+                      <li><b>Anti-Foaming Agents: </b>Prevent foam formation and maintain optimal lubrication.</li>
+                      <li><b>Extreme Pressure Additives:</b> Provide protection under high-pressure conditions.</li>
+                      <li><b>Tackifiers:</b> Improve adhesive properties and prevent slippage.</li>
+                      <li><b>Antioxidants:</b> Protect against oxidation and prolong lubricant life.</li>
+                      <li><b>TBN Boosters:</b> Neutralize acidic contaminants and prevent corrosion.</li>
+                      <li><b>ZDDP:</b> A versatile additive for antiwear and extreme pressure protection.</li>
+                      <li><b>Molybdenum Disulfide:</b> Provides excellent lubricity and wear resistance.</li>
+                      <li><b>Viscosity Improvers:</b> Maintain viscosity over a wide temperature range.</li>
+                      <li><b>Base Oils:</b> The foundation of lubricants, available in various groups (I, II, III, IV) to meet different performance requirements.</li>
                     </ul>
                     <p>
                       Why Choose Yophiel Internationals?
                     </p>
                     <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li>Expertise and Experience: Our team has a deep understanding of the lubricants and additives industry, ensuring that we provide the right solutions.</li>
-                      <li>Quality Products: We source our lubricants and additives from reputable suppliers and adhere to strict quality standards.</li>
-                      <li>Customized Solutions: We work closely with our clients to develop tailored solutions that meet their unique needs.</li>
-                      <li>Global Reach: Our extensive network allows us to serve clients worldwide.</li>
-                      <li>Commitment to Excellence: We strive to provide exceptional service and exceed customer expectations.</li>
+                      <li><b>Expertise and Experience:</b> Our team has a deep understanding of the lubricants and additives industry, ensuring that we provide the right solutions.</li>
+                      <li><b>Quality Products:</b> We source our lubricants and additives from reputable suppliers and adhere to strict quality standards.</li>
+                      <li><b>Customized Solutions:</b> We work closely with our clients to develop tailored solutions that meet their unique needs.</li>
+                      <li><b>Global Reach:</b> Our extensive network allows us to serve clients worldwide.</li>
+                      <li><b>Commitment to Excellence:</b> We strive to provide exceptional service and exceed customer expectations.</li>
                     </ul>
                     <p>
                       Contact us today to learn more about how Yophiel Internationals can help you optimize your equipment performance and reduce maintenance costs.
