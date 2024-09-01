@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Fragment } from 'react';
 
 // -------- custom hook -------- //
@@ -7,8 +8,18 @@ import useLightBox from 'hooks/useLightBox';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
+import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
+import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
 import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+
+// -------- data -------- //
+const images = [
+  '/img/avatars/rubber_1.jpg',
+  '/img/avatars/rubber_2.jpg',
+  '/img/avatars/rubber_3.jpg',
+  '/img/avatars/rubber_4.webp',
+];
 
 const ProjectDetails = () => {
   // used for image lightbox
@@ -19,141 +30,106 @@ const ProjectDetails = () => {
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-gradient-primary">
+      <header style={{ backgroundColor: '#f3f8fc', padding: '1rem 0' }}>
         <Navbar
           language
-          button={<NextLink title="Contact Us" href="#" className="btn btn-sm btn-light rounded-pill shadow-sm" />}
+          button={
+            <NextLink
+              title="Contact"
+              href="#"
+              className="btn btn-sm btn-primary rounded-pill"
+            />
+          }
         />
       </header>
 
-      <main className="content-wrapper">
-        {/* ========== hero section ========== */}
-        <section className="wrapper bg-gradient-primary">
-          <div className="container pt-10 pb-19 pt-md-14 pb-md-22 text-center text-white">
-            <div className="row">
-              <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <div className="post-header">
-                  <div className="post-category text-white-50 mb-3">
-                    <NextLink
-                      title="Plastics & Rubber Chemicals"
-                      href="#"
-                      className="hover text-decoration-none text-white"
-                    />
-                  </div>
-                  <h1 className="display-1 mb-4 font-weight-bold">PLASTICS & RUBBER CHEMICALS</h1>
-                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18 font-weight-bold text-white-80">
-                    Explore our comprehensive range of high-quality chemicals designed to enhance the performance of
-                    plastics and rubber products.
-                  </p>
+      <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
+        <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <div style={{ margin: '0 auto', maxWidth: '600px' }}>
+              <div className="post-header">
+                <div className="post-category text-line">
+                  <NextLink title="YOPHIEL" href="#" className="hover" />
                 </div>
+
+                <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
+                  Plastic and Rubber Chemicals
+                </h1>
+                <p style={{ fontSize: '1.2rem', padding: '0 2rem' }}>
+                  Discover our extensive range of chemicals essential for plastic and rubber manufacturing. Our products are designed to enhance the performance, durability, and quality of your end products.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ========== content section ========== */}
-        <section className="wrapper bg-light wrapper-border">
-          <div className="container pb-14 pb-md-16">
-            <div className="row">
-              <div className="col-12">
-                <article className="mt-n21">
-                  <div className="row mt-8 mt-md-12">
-                    <div className="col-md-10 offset-md-1 text-justify">
-                      <h2 className="mb-5 text-center text-uppercase text-primary">Our Product Range</h2>
-                      <p className="text-muted mb-4">
-                        Our wide array of products cater to the diverse needs of the plastics and rubber industry,
-                        ensuring high-quality and reliable performance in every application.
-                      </p>
-                      <ul className="list-unstyled">
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>POLYMERS (PE/PP/PVC/PC/PET):</strong>
-                          <p>Essential raw materials for producing a wide variety of plastic products, ensuring durability and flexibility.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>DESICCANTS:</strong>
-                          <p>Protect products from moisture damage, ensuring longevity and quality during storage and transport.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>STABILIZERS (LEAD/Ca-Zn/TIN):</strong>
-                          <p>Enhance the heat stability and lifespan of plastics, crucial for products exposed to varying temperatures.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>PLASTICIZERS (DOP/ESBO/CPW):</strong>
-                          <p>Improve the flexibility and softness of plastics, making them suitable for various applications.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ANTI-BLOCK AGENT:</strong>
-                          <p>Prevent layers of plastic films from sticking together, ensuring ease of handling and processing.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ANTI-STATIC AGENT:</strong>
-                          <p>Reduce static electricity buildup in plastics, improving safety and performance in electronic applications.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ANTI-FOG AGENT:</strong>
-                          <p>Prevents condensation on plastic surfaces, maintaining clarity and visibility in packaging.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>IRON OXIDES:</strong>
-                          <p>Provide vibrant, durable colors for plastics, used extensively in construction and automotive industries.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>GLYCOLS:</strong>
-                          <p>Act as versatile additives, improving the performance of various plastic and rubber products.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>IMPACT MODIFIERS:</strong>
-                          <p>Enhance the toughness and impact resistance of plastics, crucial for durable applications.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>PROCESSING AIDS:</strong>
-                          <p>Facilitate the manufacturing process, ensuring smooth production and consistent product quality.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ACTIVATORS:</strong>
-                          <p>Accelerate the curing process in rubber, ensuring efficient and reliable production.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>VULCANIZING AGENT:</strong>
-                          <p>Essential for rubber production, providing strength and elasticity to finished products.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ACCELERATORS:</strong>
-                          <p>Speed up the rubber curing process, improving production efficiency and product performance.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ANTI-DEGRADING AGENT:</strong>
-                          <p>Protect rubber products from environmental degradation, extending their lifespan.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>ANTIOXIDANTS:</strong>
-                          <p>Prevent oxidation in plastics and rubber, preserving their quality and performance over time.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>SULPHUR DONOR:</strong>
-                          <p>Used in vulcanization, enhancing the cross-linking process for stronger rubber products.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>RETARDER:</strong>
-                          <p>Control the curing speed of rubber, ensuring precise processing and high-quality results.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>PEPTIZER:</strong>
-                          <p>Improve the processing of rubber, making it easier to handle and shape during manufacturing.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>CARBON BLACK (ASTM Grade/Speciality Grades):</strong>
-                          <p>Enhance the strength, durability, and color of rubber products, widely used in tires and industrial applications.</p>
-                        </li>
-                        <li className="mb-3">
-                          <strong style={{ color: '#007bff' }}>OTHER CHEMICALS & OILS:</strong>
-                          <p>A comprehensive range of additives and oils to meet the specific needs of plastics and rubber manufacturing.</p>
-                        </li>
-                      </ul>
+        <section
+          style={{
+            backgroundColor: '#f9f9f9',
+            borderTop: '1px solid #e0e0e0',
+            padding: '2rem 0',
+          }}
+        >
+          <div style={{ padding: '0 1rem', maxWidth: '1200px', margin: '0 auto' }}>
+            <div>
+              <article style={{ marginTop: '-5rem' }}>
+                <FigureImage width={2400} height={1640} src="/img/avatars/rubber_5.webp" className="rounded mb-8 mb-md-12" />
+
+                <ProjectDetailsContent title="About YOPHIEL Plastic & Rubber Chemicals" />
+
+                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+                  {images.map((item) => (
+                    <div style={{ flex: '1 1 calc(50% - 1.5rem)', boxSizing: 'border-box' }} key={item}>
+                      <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
+                        <a href={item} data-glightbox data-gallery="project-1">
+                          <Image
+                            width={960}
+                            height={640}
+                            src={item}
+                            alt="Plastic and Rubber Chemicals"
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                          />
+                        </a>
+                      </figure>
                     </div>
+                  ))}
+                </div>
+
+                <div style={{ marginTop: '3rem', padding: '0 2rem' }}>
+                  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                    <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
+                      Plastic and Rubber Chemicals Overview
+                    </h2>
+                    <p>
+                      Yophiel Internationals specializes in providing high-performance chemicals for the plastic and rubber industries. Our offerings are tailored to meet the rigorous demands of modern manufacturing processes, improving product quality, functionality, and safety.
+                    </p>
+
+                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+                      <li><strong>POLYMERS (PE/PP/PVC/PC/PET):</strong> Essential materials for creating various plastic products with desired properties and performance characteristics.</li>
+                      <li><strong>DESICCANTS:</strong> Used to absorb moisture, preventing product degradation and maintaining quality during storage and use.</li>
+                      <li><strong>STABILIZERS (LEAD/Ca-Zn/TIN):</strong> Additives that enhance the stability of plastic products against heat, light, and oxidation.</li>
+                      <li><strong>PLASTICIZERS (DOP/ESBO/CPW):</strong> Improve the flexibility and processability of plastics, making them easier to work with and enhancing their end-use performance.</li>
+                      <li><strong>ANTI-BLOCK AGENT:</strong> Prevents the sticking of plastic films and sheets, ensuring smooth processing and handling.</li>
+                      <li><strong>ANTI-STATIC AGENT:</strong> Reduces static electricity buildup, improving the handling and performance of plastic products.</li>
+                      <li><strong>ANTI-FOG AGENT:</strong> Enhances the clarity of plastic films by reducing fogging and condensation, ideal for packaging and visibility.</li>
+                      <li><strong>IRON OXIDES:</strong> Provide color and opacity to plastic products, including pigments for a wide range of applications.</li>
+                      <li><strong>GLYCOLS:</strong> Used as solvents, plasticizers, and performance enhancers in various formulations.</li>
+                      <li><strong>IMPACT MODIFIERS:</strong> Improve the toughness and impact resistance of plastics, making them suitable for demanding applications.</li>
+                      <li><strong>PROCESSING AIDS:</strong> Facilitate easier processing of plastics, reducing energy consumption and enhancing product quality.</li>
+                      <li><strong>ACTIVATORS:</strong> Enhance the performance of other additives and accelerators, improving the overall efficiency of the manufacturing process.</li>
+                      <li><strong>VULCANIZING AGENT:</strong> Key component in the rubber industry, promoting the cross-linking of rubber molecules to enhance durability and elasticity.</li>
+                      <li><strong>ACCELERATORS:</strong> Speed up the vulcanization process, reducing manufacturing time and improving the properties of rubber products.</li>
+                      <li><strong>ANTI-DEGRADING AGENT:</strong> Protects against the degradation of rubber and plastic products caused by environmental factors.</li>
+                      <li><strong>ANTIOXIDANTS:</strong> Prevent oxidative damage in rubber and plastic products, extending their lifespan and maintaining performance.</li>
+                      <li><strong>SULPHUR DONOR:</strong> Facilitates sulfur vulcanization in rubber, enhancing the strength and elasticity of the final product.</li>
+                      <li><strong>RETARDER:</strong> Controls the rate of vulcanization, allowing for better processing and handling of rubber products.</li>
+                      <li><strong>PEPTIZER:</strong> Improves the processability of rubber by breaking down large molecules into smaller, more manageable ones.</li>
+                      <li><strong>CARBON BLACK (ASTM Grade/Speciality Grades):</strong> Provides reinforcement, color, and UV protection in rubber and plastic products.</li>
+                      <li><strong>OTHER CHEMICALS & OILS:</strong> A diverse range of additional chemicals and oils to meet specific needs and enhance product performance.</li>
+                    </ul>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>

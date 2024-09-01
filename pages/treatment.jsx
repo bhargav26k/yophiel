@@ -1,92 +1,131 @@
-import { Fragment } from 'react'; 
+import Image from 'next/image';
+import { Fragment } from 'react';
+
+// -------- custom hook -------- //
+import useLightBox from 'hooks/useLightBox';
+
+// -------- custom component -------- //
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
+import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
+import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
+import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+
+// -------- data -------- //
+const images = [
+  '/img/avatars/water_6.jpg',
+  '/img/avatars/water_3.jpeg',
+  '/img/avatars/water_4.jpg',
+  '/img/avatars/water_7.webp',
+];
 
 const ProjectDetails = () => {
+  // used for image lightbox
+  useLightBox();
+
   return (
     <Fragment>
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-gradient-primary">
-        <Navbar language button={<NextLink title="Contact Us" href="#" className="btn btn-sm btn-light rounded-pill shadow-sm" />} />
+      <header style={{ backgroundColor: '#f3f8fc', padding: '1rem 0' }}>
+        <Navbar
+          language
+          button={
+            <NextLink
+              title="Contact"
+              href="#"
+              className="btn btn-sm btn-primary rounded-pill"
+            />
+          }
+        />
       </header>
 
-      <main className="content-wrapper">
-        <section className="wrapper bg-gradient-primary">
-          <div className="container pt-10 pb-19 pt-md-14 pb-md-22 text-center text-white">
-            <div className="row">
-              <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <div className="post-header">
-                  <h1 className="display-1 mb-3">Water Treatment Chemicals</h1>
-                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18" style={{ color: '#000', fontWeight: 'bold' }}>
-                    Explore our comprehensive range of high-quality chemicals designed to enhance the efficiency and effectiveness of water treatment processes.
-                  </p>
+      <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
+        <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <div style={{ margin: '0 auto', maxWidth: '600px' }}>
+              <div className="post-header">
+                <div className="post-category text-line">
+                  <NextLink title="YOPHIEL" href="#" className="hover" />
                 </div>
+
+                <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
+                  Water Treatment Chemicals
+                </h1>
+                <p style={{ fontSize: '1.2rem', padding: '0 2rem' }}>
+                  Explore our comprehensive range of chemicals essential for water treatment. Our products are designed to optimize water quality, enhance safety, and meet regulatory standards.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="wrapper bg-light wrapper-border">
-          <div className="container pb-14 pb-md-16">
-            <div className="row">
-              <div className="col-12">
-                <article className="mt-n21">
+        <section
+          style={{
+            backgroundColor: '#f9f9f9',
+            borderTop: '1px solid #e0e0e0',
+            padding: '2rem 0',
+          }}
+        >
+          <div style={{ padding: '0 1rem', maxWidth: '1200px', margin: '0 auto' }}>
+            <div>
+              <article style={{ marginTop: '-5rem' }}>
+                <FigureImage width={2400} height={1640} src="/img/avatars/water_1.jpg" className="rounded mb-8 mb-md-12" />
 
-                  {/* Insert an image under the main heading */}
-                  <figure className="rounded mb-8 mb-md-12 text-center">
-                    <img src="img/avatars/Water_treatment.jpeg" alt="Water Treatment" className="rounded" style={{ maxWidth: '100%', height: 'auto' }} />
-                  </figure>
+                <ProjectDetailsContent title="About YOPHIEL Water Treatment Chemicals" />
 
-                  {/* Content Sections */}
-                  <div className="col-md-10 offset-md-1 text-justify">
-                    <h2 className="mb-4 text-primary">Coagulants and Flocculants</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Coagulants and flocculants are essential for removing suspended solids and other impurities from water. Our range includes both organic and inorganic chemicals designed to optimize the settling process and improve water clarity.
+                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+                  {images.map((item) => (
+                    <div style={{ flex: '1 1 calc(50% - 1.5rem)', boxSizing: 'border-box' }} key={item}>
+                      <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
+                        <a href={item} data-glightbox data-gallery="project-1">
+                          <Image
+                            width={960}
+                            height={640}
+                            src={item}
+                            alt="Water Treatment Chemicals"
+                            style={{ width: '100%', height: 'auto', display: 'block' }}
+                          />
+                        </a>
+                      </figure>
+                    </div>
+                  ))}
+                </div>
+
+                <div style={{ marginTop: '3rem', padding: '0 2rem' }}>
+                  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                    <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
+                      Water Treatment Chemicals Overview
+                    </h2>
+                    <p>
+                      Yophiel Internationals specializes in providing high-quality chemicals for water treatment. Our products are designed to ensure optimal water quality and meet various environmental and safety standards.
                     </p>
 
-                    <h2 className="mb-4 text-primary">Corrosion and Scale Inhibitors</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Protect your water systems from corrosion and scale buildup with our specially formulated inhibitors. These chemicals help prolong the life of your equipment and maintain optimal operational efficiency.
-                    </p>
-
-                    <h2 className="mb-4 text-primary">Biocides and Disinfectants</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Ensure the microbial safety of your water with our effective biocides and disinfectants. Our products help control bacteria, algae, and other microorganisms, ensuring the water remains safe for use.
-                    </p>
-
-                    <h2 className="mb-4 text-primary">pH Adjusters and Alkalinity Control</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Achieve the perfect pH balance in your water systems with our pH adjusters and alkalinity control chemicals. These products are crucial for maintaining water quality and preventing corrosion.
-                    </p>
-
-                    <h2 className="mb-4 text-primary">Defoamers and Antifoaming Agents</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Manage foam levels in your water systems with our range of defoamers and antifoaming agents. These chemicals help prevent operational issues caused by excessive foam formation.
-                    </p>
-
-                    <h2 className="mb-4 text-primary">Oxidants and Reducing Agents</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      Our oxidants and reducing agents are designed to manage and control oxidation-reduction reactions in water treatment processes. They are essential for processes like disinfection, odor control, and color removal.
-                    </p>
-
-                    <h2 className="mb-4 text-primary">Specialty Chemicals</h2>
-                    <p style={{ color: '#333', fontWeight: 'bold' }}>
-                      In addition to the standard range, we offer specialty chemicals tailored to specific water treatment needs. Whether you are dealing with unique water sources or complex treatment processes, we have the right solution for you.
-                    </p>
+                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+                      <li><strong>SPECIALTY CHEMICALS:</strong> A range of unique chemicals tailored to specific water treatment needs, enhancing the efficiency and effectiveness of the treatment processes.</li>
+                      <li><strong>OXIDANTS AND REDUCING AGENTS:</strong> Essential for various water treatment processes, these chemicals help in the removal of contaminants through oxidation and reduction reactions.</li>
+                      <li><strong>DEFOAMERS AND ANTIFOAMING AGENTS:</strong> Prevent and eliminate foam in water treatment systems, improving process efficiency and reducing maintenance issues.</li>
+                      <li><strong>pH ADJUSTERS AND ALKALINITY CONTROL:</strong> Maintain and control the pH levels and alkalinity of water to ensure optimal conditions for treatment processes and prevent corrosion or scaling.</li>
+                      <li><strong>BIOCIDES AND DISINFECTANTS:</strong> Kill or inhibit the growth of microorganisms in water systems, ensuring water safety and preventing biological fouling.</li>
+                      <li><strong>CORROSION AND SCALE INHIBITORS:</strong> Protect water treatment equipment from corrosion and scale buildup, extending the lifespan of the equipment and improving operational efficiency.</li>
+                      <li><strong>COAGULANTS AND FLOCCULANTS:</strong> Aid in the removal of suspended particles from water by causing them to clump together, making them easier to filter out and improve water clarity.</li>
+                    </ul>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
 
-        {/* ========== footer section ========== */}
-        <Footer8 />
+        {/* ========== navigation section ========== */}
+        <ProjectDetailsNavigation />
       </main>
+
+      {/* ========== footer section ========== */}
+      <Footer8 />
     </Fragment>
   );
 };
