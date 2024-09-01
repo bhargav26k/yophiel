@@ -116,38 +116,38 @@ const ProjectDetails = () => {
                       operations, including:
                     </p>
                     <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li>Biocides: Prevent microbial growth and contamination.</li>
+                      <li><b>Biocides:</b> Prevent microbial growth and contamination.</li>
                       <li>
-                        Corrosion Inhibitors: Protect equipment from corrosion and
+                      <b>Corrosion Inhibitors:</b> Protect equipment from corrosion and
                         extend its lifespan.
                       </li>
                       <li>
-                        Scale Inhibitors: Prevent mineral scale formation and
+                      <b>Scale Inhibitors:</b> Prevent mineral scale formation and
                         maintain smooth operations.
                       </li>
                       <li>
-                        Stabilizing Agents: Ensure the stability of emulsions and
+                      <b>Stabilizing Agents:</b> Ensure the stability of emulsions and
                         suspensions.
                       </li>
                       <li>
-                        Surfactants: Improve wetting properties and enhance cleaning
+                      <b>Surfactants:</b> Improve wetting properties and enhance cleaning
                         processes.
                       </li>
-                      <li>Coagulants: Facilitate the removal of impurities from water.</li>
-                      <li>Emulsifiers: Promote the formation and stability of emulsions.</li>
-                      <li>Cleaners: Remove contaminants and maintain equipment cleanliness.</li>
+                      <li><b>Coagulants:</b> Facilitate the removal of impurities from water.</li>
+                      <li><b>Emulsifiers:</b> Promote the formation and stability of emulsions.</li>
+                      <li><b>Cleaners:</b> Remove contaminants and maintain equipment cleanliness.</li>
                       <li>
-                        Oxygen Scavengers: Prevent corrosion by removing dissolved
+                      <b>Oxygen Scavengers:</b> Prevent corrosion by removing dissolved
                         oxygen.
                       </li>
-                      <li>Defoamers: Reduce foam formation and improve process efficiency.</li>
-                      <li>Activated Carbon: Absorb impurities and contaminants.</li>
+                      <li><b>Defoamers:</b> Reduce foam formation and improve process efficiency.</li>
+                      <li><b>Activated Carbon:</b> Absorb impurities and contaminants.</li>
                       <li>
-                        Calcium Chloride: Used as a deicer, desiccant, and drilling
+                      <b>Calcium Chloride:</b> Used as a deicer, desiccant, and drilling
                         fluid additive.
                       </li>
                       <li>
-                        Xanthan Gum: A thickening agent and rheology modifier.
+                      <b>Xanthan Gum:</b> A thickening agent and rheology modifier.
                       </li>
                     </ul>
                     <p>
@@ -156,10 +156,10 @@ const ProjectDetails = () => {
                       specific needs, including:
                     </p>
                     <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li>Energy Management: Optimize energy consumption and reduce costs.</li>
-                      <li>Annual Maintenance Contracts: Ensure regular maintenance and preventive measures.</li>
-                      <li>Tolling and Blending: Offer flexible production options to meet your requirements.</li>
-                      <li>Raw Material Procurement: Source high-quality raw materials at competitive prices.</li>
+                      <li><b>Energy Management:</b> Optimize energy consumption and reduce costs.</li>
+                      <li><b>Annual Maintenance Contracts:</b> Ensure regular maintenance and preventive measures.</li>
+                      <li><b>Tolling and Blending:</b> Offer flexible production options to meet your requirements.</li>
+                      <li><b>Raw Material Procurement:</b> Source high-quality raw materials at competitive prices.</li>
                     </ul>
                   </div>
                 </div>
