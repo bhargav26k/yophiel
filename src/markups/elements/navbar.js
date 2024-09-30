@@ -117,4 +117,4 @@ import NextLink from 'components/reuseable/links/NextLink';
 />
 `;
 
-export { markup1, markup2, markup3, markup4, markup5, markup6, markup7, markup8, markup9, markup10, markup11, markup12, markup13, markup14, markup15, markup16 };
+export { markup1, markup2, markup3, markup4, markup5, markup6, markup7, markup8, markup9, markup10};
