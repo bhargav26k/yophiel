@@ -72,22 +72,22 @@ const Hero18 = () => {
   const slides = [
     {
       id: 1,
-      image: 'https://yophiel.net/img/photos/bg28.jpg',
+      image: '/img/photos/bg28.jpg',
       heading: 'Innovative Solutions',
     },
     {
       id: 2,
-      image: 'https://yophiel.net/img/photos/bg29.jpg',
+      image: '/img/photos/bg29.jpg',
       heading: 'Connecting the World',
     },
     {
       id: 3,
-      image: 'https://yophiel.net/img/photos/bg30.jpg',
+      image: '/img/photos/bg30.jpg',
       heading: 'Empowering Businesses',
     },
     {
       id: 4,
-      image: 'https://yophiel.net/img/photos/bg31.jpg',
+      image: '/img/photos/bg31.jpg',
       heading: 'Driving Innovation',
     },
   ];
