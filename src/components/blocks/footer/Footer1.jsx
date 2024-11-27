@@ -18,7 +18,7 @@ const Footer1 = () => {
         <hr className="mt-11 mb-12" />
 
         <div className="row gy-6 gy-lg-0">
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-4 col-lg-4">
             <div className="widget">
               <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
 
@@ -31,7 +31,7 @@ const Footer1 = () => {
             </div>
           </div>
 
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-4 col-lg-4">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
               <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
@@ -40,7 +40,7 @@ const Footer1 = () => {
             </div>
           </div>
 
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-4 col-lg-4">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Learn More</h4>
               <ul className="list-unstyled  mb-0">
@@ -54,7 +54,7 @@ const Footer1 = () => {
             </div>
           </div>
 
-          <div className="col-md-12 col-lg-3">
+          {/* <div className="col-md-12 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Our Newsletter</h4>
               <p className="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
@@ -92,7 +92,7 @@ const Footer1 = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>;

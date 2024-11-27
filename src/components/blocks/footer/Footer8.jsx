@@ -7,21 +7,21 @@ import footerNav from 'data/footer';
 const Footer8 = () => {
   return <footer className="bg-white">
       <div className="container py-13 py-md-15">
-        <div className="row gy-6 gy-lg-0">
-          <div className="col-md-4 col-lg-3">
+        <div className="row gy-6 gy-lg-0  ms-18">
+          <div className="col-md-5 col-lg-4">
             <div className="widget">
-              <img className="mb-4" src="https://yophiel.net/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" alt="" />
+              <img className="mb-4" src="\img\yophiel-logo-trans.png" alt="" />
 
               <p className="mb-4">
-                © 2024 yophiel.net <br className="d-none d-lg-block" />
-                All rights reserved.
-              </p>
+  © {new Date().getFullYear()} yophiel.net <br className="d-none d-lg-block" />
+  All rights reserved.
+</p>
 
               <SocialLinks className="nav social" />
             </div>
           </div>
 
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-5 col-lg-4 mt-2">
             <div className="widget">
               <h4 className="widget-title mb-3" style={{color: '#111'}}>Get in Touch</h4>
               <address className="pe-xl-15 pe-xxl-17" >F-705, West Coast Park, Shivane, Pune, MH, IND 411 023</address>
@@ -30,7 +30,7 @@ const Footer8 = () => {
             </div>
           </div>
 
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-5 col-lg-4 mt-2">
             <div className="widget">
               <h4 className="widget-title mb-3" style={{color: '#111'}}>Learn More</h4>
               <ul className="list-unstyled text-reset mb-0" >
@@ -45,7 +45,7 @@ const Footer8 = () => {
           </div>
          
 
-          <div className="col-md-12 col-lg-3">
+          {/* <div className="col-md-12 col-lg-3">
             <div className="widget">
               <h4 className="widget-title mb-3" style={{color: '#111'}}>Our Newsletter</h4>
               <p className="mb-5" >Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
@@ -83,7 +83,7 @@ const Footer8 = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>;
