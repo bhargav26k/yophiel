@@ -8,9 +8,9 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('Sending...');
 
-    const serviceId = 'service_1vxdwom'; // Replace with your EmailJS Service ID
-    const templateId = 'template_d1jjeah'; // Replace with your EmailJS Template ID
-    const publicKey = '3qNl3eiJsaxBw2urD'; // Replace with your Public Key
+    const serviceId = 'service_ueb68jr'; // Replace with your EmailJS Service ID
+    const templateId = 'template_zyfav7k'; // Replace with your EmailJS Template ID
+    const publicKey = 'SFWOC94wR8HnPmGyz'; // Replace with your Public Key
 
     emailjs
       .sendForm(serviceId, templateId, e.target, publicKey)
