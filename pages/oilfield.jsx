@@ -1,17 +1,15 @@
 import Image from 'next/image';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
-// -------- custom hook -------- //
+// -------- custom hooks and components -------- //
 import useLightBox from 'hooks/useLightBox';
-
-// -------- custom component -------- //
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
-import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
-import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
 import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+import { Hero18, Hero1, Hero2, Hero3, Hero4, Hero5, Hero6, Hero7, Hero8, Hero9, Hero10, Hero11, Hero12, Hero13, Hero14, Hero15, Hero16, Hero17, Hero19, Hero20, Hero21, Hero22, Hero23, Hero24, Hero25, Hero26, Hero27, Hero28,Hero29, Hero30, Hero31, Hero32, Hero33, Hero34 } from 'components/blocks/hero';
+
 
 // -------- data -------- //
 const images = [
@@ -24,6 +22,29 @@ const images = [
 const ProjectDetails = () => {
   // used for image lightbox
   useLightBox();
+
+  // State for image index
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // Automatic image transition
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Change image every 2 seconds
+
+    return () => clearInterval(interval); // Clean up interval on component unmount
+  }, []);
+
+  // Handlers for slider buttons
+  const handleNext = () => {
+    setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentImage((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <Fragment>
@@ -44,6 +65,7 @@ const ProjectDetails = () => {
       </header>
 
       <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
+        {/* Oil Refinery Section */}
         <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div style={{ margin: '0 auto', maxWidth: '600px' }}>
@@ -64,115 +86,193 @@ const ProjectDetails = () => {
           </div>
         </section>
 
+        <Hero25 />
+
+        {/* Image Display Section */}
+        {/* <section
+  style={{
+    backgroundColor: '#f9f9f9',
+    borderTop: '1px solid #e0e0e0',
+    padding: '4rem 0',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+  }}
+>
+
+  <div
+    style={{
+      width: '1000%',
+      maxWidth: '1200px', // Increased max width
+      overflow: 'hidden',
+      borderRadius: '12px',
+      position: 'relative',
+    }}
+  >
+    <figure style={{ margin: '0' }}>
+      <Image
+        width={2000} // Increased image dimensions
+        height={900}
+        src={images[currentImage]}
+        alt="Oil Refinery"
+        style={{
+          width: '100%',
+          height: 'auto',
+          display: 'block',
+          transition: 'opacity 0.5s ease-in-out',
+        }}
+      />
+    </figure>
+
+    <button
+      onClick={handlePrev}
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '15px',
+        transform: 'translateY(-50%)',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        color: '#ffffff',
+        border: 'none',
+        borderRadius: '50%',
+        width: '50px', // Increased button size
+        height: '50px',
+        fontSize: '1.5rem', // Increased font size for arrows
+        cursor: 'pointer',
+      }}
+    >
+      &lt;
+    </button>
+    <button
+      onClick={handleNext}
+      style={{
+        position: 'absolute',
+        top: '50%',
+        right: '15px',
+        transform: 'translateY(-50%)',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        color: '#ffffff',
+        border: 'none',
+        borderRadius: '50%',
+        width: '50px', // Increased button size
+        height: '50px',
+        fontSize: '1.5rem', // Increased font size for arrows
+        cursor: 'pointer',
+      }}
+    >
+      &gt;
+    </button>
+  </div>
+</section> */}
+
+
+        {/* Information Section */}
         <section
-          style={{
-            backgroundColor: '#f9f9f9',
-            borderTop: '1px solid #e0e0e0',
-            padding: '2rem 0',
-          }}
-        >
-          <div style={{ padding: '0 1rem', maxWidth: '1200px', margin: '0 auto' }}>
-            <div>
-              <article style={{ marginTop: '-5rem' }}>
-                <FigureImage width={2400} height={1640} src="/img/photos/Oilfied and Refinery.jpg" className="rounded mb-8 mb-md-12" />
+  style={{
+    padding: '4rem 2rem',
+    backgroundColor: '#ffffff',
+    lineHeight: '1.8',
+    fontFamily: "'Roboto', sans-serif",
+  }}
+>
+  <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+    {/* Main Heading */}
+    <h2
+      style={{
+        fontSize: '2.5rem',
+        fontWeight: '700',
+        marginBottom: '1.5rem',
+        color: '#1a1a1a',
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        borderBottom: '3px solid #007bff',
+        display: 'inline-block',
+        paddingBottom: '0.5rem',
+        align:"center"
+      }}
+    >
+      About Our Chemicals
+    </h2>
 
-                <ProjectDetailsContent title="About the YOPHIEL" />
+    {/* Introductory Paragraph */}
+    <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: '#555' }}>
+      Yophiel Internationals is your trusted partner for high-quality oilfield
+      and refinery chemicals. We specialize in providing innovative solutions
+      that enhance operational efficiency and optimize productivity.
+    </p>
 
-                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
-                  {images.map((item) => (
-                    <div style={{ flex: '1 1 calc(50% - 1.5rem)', boxSizing: 'border-box' }} key={item}>
-                      <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
-                        <a href={item} data-glightbox data-gallery="project-1">
-                          <Image
-                            width={960}
-                            height={640}
-                            src={item}
-                            alt="demo"
-                            style={{ width: '100%', height: 'auto', display: 'block' }}
-                          />
-                        </a>
-                      </figure>
-                    </div>
-                  ))}
-                </div>
+    {/* Subheading */}
+    <h3
+      style={{
+        fontSize: '2rem',
+        fontWeight: '600',
+        marginTop: '2rem',
+        marginBottom: '1rem',
+        color: '#333',
+      }}
+    >
+      Our Services
+    </h3>
 
-                <div style={{ marginTop: '3rem', padding: '0 2rem' }}>
-                  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
-                      Oilfield and Refinery Chemicals
-                    </h2>
-                    <p>
-                      Yophiel Internationals is your trusted partner for
-                      high-quality oilfield and refinery chemicals. We specialize
-                      in providing innovative solutions that enhance operational
-                      efficiency and optimize productivity.
-                    </p>
+    {/* Services Description */}
+    <p style={{ fontSize: '1rem', marginBottom: '1.5rem', color: '#555' }}>
+      <strong>Chemical Distribution:</strong> We offer a wide range of
+      essential chemicals used in oilfield and refinery operations, including:
+    </p>
 
-                    <p>
-                      <strong>Our Services</strong>
-                      <br />
-                      <strong>Chemical Distribution:</strong> We offer a wide range
-                      of essential chemicals used in oilfield and refinery
-                      operations, including:
-                    </p>
-                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li><b>Biocides:</b> Prevent microbial growth and contamination.</li>
-                      <li>
-                      <b>Corrosion Inhibitors:</b> Protect equipment from corrosion and
-                        extend its lifespan.
-                      </li>
-                      <li>
-                      <b>Scale Inhibitors:</b> Prevent mineral scale formation and
-                        maintain smooth operations.
-                      </li>
-                      <li>
-                      <b>Stabilizing Agents:</b> Ensure the stability of emulsions and
-                        suspensions.
-                      </li>
-                      <li>
-                      <b>Surfactants:</b> Improve wetting properties and enhance cleaning
-                        processes.
-                      </li>
-                      <li><b>Coagulants:</b> Facilitate the removal of impurities from water.</li>
-                      <li><b>Emulsifiers:</b> Promote the formation and stability of emulsions.</li>
-                      <li><b>Cleaners:</b> Remove contaminants and maintain equipment cleanliness.</li>
-                      <li>
-                      <b>Oxygen Scavengers:</b> Prevent corrosion by removing dissolved
-                        oxygen.
-                      </li>
-                      <li><b>Defoamers:</b> Reduce foam formation and improve process efficiency.</li>
-                      <li><b>Activated Carbon:</b> Absorb impurities and contaminants.</li>
-                      <li>
-                      <b>Calcium Chloride:</b> Used as a deicer, desiccant, and drilling
-                        fluid additive.
-                      </li>
-                      <li>
-                      <b>Xanthan Gum:</b> A thickening agent and rheology modifier.
-                      </li>
-                    </ul>
-                    <p>
-                      <strong>Engineering Services:</strong> Our experienced team
-                      provides comprehensive engineering solutions tailored to your
-                      specific needs, including:
-                    </p>
-                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li><b>Energy Management:</b> Optimize energy consumption and reduce costs.</li>
-                      <li><b>Annual Maintenance Contracts:</b> Ensure regular maintenance and preventive measures.</li>
-                      <li><b>Tolling and Blending:</b> Offer flexible production options to meet your requirements.</li>
-                      <li><b>Raw Material Procurement:</b> Source high-quality raw materials at competitive prices.</li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+    {/* List of Services */}
+    <ul
+      style={{
+        paddingLeft: '1.5rem',
+        listStyleType: 'disc',
+        color: '#333',
+        fontSize: '1.1rem',
+        lineHeight: '1.8',
+      }}
+    >
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Biocides:</strong> Prevent microbial growth and contamination.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Corrosion Inhibitors:</strong> Protect equipment from
+        corrosion and extend its lifespan.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Scale Inhibitors:</strong> Prevent mineral scale formation and
+        maintain smooth operations.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Stabilizing Agents:</strong> Ensure the stability of emulsions
+        and suspensions.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Surfactants:</strong> Improve wetting properties and enhance
+        cleaning processes.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Coagulants:</strong> Facilitate the removal of impurities from
+        water.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Emulsifiers:</strong> Promote the formation and stability of
+        emulsions.
+      </li>
+      <li style={{ marginBottom: '0.5rem' }}>
+        <strong>Cleaners:</strong> Remove contaminants and maintain equipment
+        cleanliness.
+      </li>
+    </ul>
+  </div>
+</section>
 
-        {/* ========== navigation section ========== */}
-        <ProjectDetailsNavigation />
+
+        {/* Navigation Section */}
+        {/* <ProjectDetailsNavigation /> */}
       </main>
 
-      {/* ========== footer section ========== */}
+      {/* Footer Section */}
       <Footer8 />
     </Fragment>
   );

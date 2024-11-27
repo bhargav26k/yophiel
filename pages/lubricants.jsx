@@ -1,17 +1,12 @@
+import { useState, Fragment } from 'react';
 import Image from 'next/image';
-import { Fragment } from 'react';
-
-// -------- custom hook -------- //
-import useLightBox from 'hooks/useLightBox';
 
 // -------- custom component -------- //
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
-import FigureImage from 'components/reuseable/FigureImage';
-import NextLink from 'components/reuseable/links/NextLink';
-import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
 import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+import NextLink from 'components/reuseable/links/NextLink';
 
 // -------- data -------- //
 const images = [
@@ -22,14 +17,22 @@ const images = [
 ];
 
 const ProjectDetails = () => {
-  // used for image lightbox
-  useLightBox();
+  // used for current image index in the slider
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const handleNext = () => {
+    setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentImage((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <Fragment>
       <PageProgress />
-
-      {/* ========== header section ========== */}
       <header style={{ backgroundColor: '#f3f8fc', padding: '1rem 0' }}>
         <Navbar
           language
@@ -44,6 +47,7 @@ const ProjectDetails = () => {
       </header>
 
       <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
+        {/* Heading Section */}
         <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div style={{ margin: '0 auto', maxWidth: '600px' }}>
@@ -51,7 +55,6 @@ const ProjectDetails = () => {
                 <div className="post-category text-line">
                   <NextLink title="YOPHIEL" href="#" className="hover" />
                 </div>
-
                 <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
                   Lubricants & Grease Additives
                 </h1>
@@ -63,101 +66,167 @@ const ProjectDetails = () => {
           </div>
         </section>
 
+        {/* Image Slider Section */}
         <section
           style={{
             backgroundColor: '#f9f9f9',
             borderTop: '1px solid #e0e0e0',
-            padding: '2rem 0',
+            padding: '4rem 0',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
           }}
         >
-          <div style={{ padding: '0 1rem', maxWidth: '1200px', margin: '0 auto' }}>
-            <div>
-              <article style={{ marginTop: '-5rem', justifyContent:'center',alignItems: 'center', margin:'auto' }}>
-                <FigureImage width={2400} height={1640} src="/img/photos/HowGrease.jpg" className="rounded mb-8 mb-md-12" />
+          {/* Image Container */}
+          <div
+            style={{
+              width: '100%',
+              maxWidth: '1200px',
+              overflow: 'hidden',
+              borderRadius: '12px',
+              position: 'relative',
+            }}
+          >
+            <figure style={{ margin: '0' }}>
+              <Image
+                width={1600}
+                height={900}
+                src={images[currentImage]}
+                alt="Lubricant Image"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  transition: 'opacity 0.5s ease-in-out',
+                }}
+              />
+            </figure>
 
-                <ProjectDetailsContent title="About the Yophiel" />
-
-                <div style={{ marginTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', width:'80%', margin:'auto' }}>
-                  {images.map((item) => (
-                    <div style={{ flex: '1 1 calc(50% - 1.5rem)', boxSizing: 'border-box' }} key={item}>
-                      <figure style={{ overflow: 'hidden', borderRadius: '8px', cursor: 'pointer' }}>
-                        <a href={item} data-glightbox data-gallery="project-1">
-                          <Image
-                            width={1060}
-                            height={640}
-                            src={item}
-                            alt="demo"
-                            style={{ width: '100%', height: 'auto', display: 'block' }}
-                          />
-                        </a>
-
-                      </figure>
-                    </div>
-                  ))}
-                </div>
-
-                <div style={{ marginTop: '3rem', padding: '0 2rem' }}>
-                  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
-                    Lubricants & Grease Additives                    </h2>
-                    <p>
-                    Yophiel Internationals is your trusted partner for high-quality lubricants and grease additives. We specialize in providing innovative solutions that enhance equipment performance and extend its lifespan.
-</p>
-
-<p>
-                      <strong>Our Services</strong>
-                      <br />
-                      </p>
-                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li><b>Engine Oils:</b> For automotive, industrial, and marine applications.</li>
-                      <li><b>Gear Oils:</b> For gearboxes and transmissions.</li>
-                      <li><b>Hydraulic Oils:</b> For hydraulic systems.</li>
-                      <li><b>Greases:</b> For various industrial and automotive applications.</li>
-                      <li><b>Specialty Lubricants:</b> For unique and demanding applications.</li>
-                    </ul>
-                    <p>
-                      Grease Additive Distribution: We provide essential additives to enhance the performance of greases, such as:
-                    </p>
-                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li><b>Lithium Hydroxide:</b> Improves water resistance and stability.</li>
-                      <li><b>Friction Modifiers:</b> Reduce friction and wear.</li>
-                      <li><b>Pour Point Depressants:</b> Improve low-temperature performance.</li>
-                      <li><b>Antiwear Additives:</b> Protect against wear and extend equipment life.</li>
-                      <li><b>Anti-Foaming Agents: </b>Prevent foam formation and maintain optimal lubrication.</li>
-                      <li><b>Extreme Pressure Additives:</b> Provide protection under high-pressure conditions.</li>
-                      <li><b>Tackifiers:</b> Improve adhesive properties and prevent slippage.</li>
-                      <li><b>Antioxidants:</b> Protect against oxidation and prolong lubricant life.</li>
-                      <li><b>TBN Boosters:</b> Neutralize acidic contaminants and prevent corrosion.</li>
-                      <li><b>ZDDP:</b> A versatile additive for antiwear and extreme pressure protection.</li>
-                      <li><b>Molybdenum Disulfide:</b> Provides excellent lubricity and wear resistance.</li>
-                      <li><b>Viscosity Improvers:</b> Maintain viscosity over a wide temperature range.</li>
-                      <li><b>Base Oils:</b> The foundation of lubricants, available in various groups (I, II, III, IV) to meet different performance requirements.</li>
-                    </ul>
-                    <p>
-                      Why Choose Yophiel Internationals?
-                    </p>
-                    <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-                      <li><b>Expertise and Experience:</b> Our team has a deep understanding of the lubricants and additives industry, ensuring that we provide the right solutions.</li>
-                      <li><b>Quality Products:</b> We source our lubricants and additives from reputable suppliers and adhere to strict quality standards.</li>
-                      <li><b>Customized Solutions:</b> We work closely with our clients to develop tailored solutions that meet their unique needs.</li>
-                      <li><b>Global Reach:</b> Our extensive network allows us to serve clients worldwide.</li>
-                      <li><b>Commitment to Excellence:</b> We strive to provide exceptional service and exceed customer expectations.</li>
-                    </ul>
-                    <p>
-                      Contact us today to learn more about how Yophiel Internationals can help you optimize your equipment performance and reduce maintenance costs.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
+            {/* Slider Buttons */}
+            <button
+              onClick={handlePrev}
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '15px',
+                transform: 'translateY(-50%)',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                color: '#ffffff',
+                border: 'none',
+                borderRadius: '50%',
+                width: '50px',
+                height: '50px',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+              }}
+            >
+              &lt;
+            </button>
+            <button
+              onClick={handleNext}
+              style={{
+                position: 'absolute',
+                top: '50%',
+                right: '15px',
+                transform: 'translateY(-50%)',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                color: '#ffffff',
+                border: 'none',
+                borderRadius: '50%',
+                width: '50px',
+                height: '50px',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+              }}
+            >
+              &gt;
+            </button>
           </div>
         </section>
-
-        {/* ========== navigation section ========== */}
+ {/* Improved Information Section */}
+ <section
+          style={{
+            padding: '4rem 2rem',
+            backgroundColor: '#ffffff',
+            lineHeight: '1.8',
+            fontFamily: "'Roboto', sans-serif",
+          }}
+        >
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <h2
+              style={{
+                fontSize: '2.5rem',
+                fontWeight: '700',
+                marginBottom: '1.5rem',
+                color: '#1a1a1a',
+                textAlign: 'center',
+                textTransform: 'uppercase',
+                borderBottom: '3px solid #007bff',
+                display: 'inline-block',
+                paddingBottom: '0.5rem',
+              }}
+            >
+              About Our Chemicals
+            </h2>
+            <p style={{ fontSize: '1.2rem', marginBottom: '2rem', color: '#555' }}>
+              Yophiel Internationals is your trusted partner for high-quality oilfield and refinery chemicals. We specialize in providing innovative solutions that enhance operational efficiency and optimize productivity.
+            </p>
+            <h3
+              style={{
+                fontSize: '2rem',
+                fontWeight: '600',
+                marginTop: '2rem',
+                marginBottom: '1rem',
+                color: '#333',
+              }}
+            >
+              Our Services
+            </h3>
+            <p style={{ fontSize: '1rem', marginBottom: '1.5rem', color: '#555' }}>
+              <strong>Chemical Distribution:</strong> We offer a wide range of essential chemicals used in oilfield and refinery operations, including:
+            </p>
+            <ul
+              style={{
+                paddingLeft: '1.5rem',
+                listStyleType: 'disc',
+                color: '#333',
+                fontSize: '1.1rem',
+                lineHeight: '1.8',
+              }}
+            >
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Biocides:</strong> Prevent microbial growth and contamination.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Corrosion Inhibitors:</strong> Protect equipment from corrosion and extend its lifespan.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Scale Inhibitors:</strong> Prevent mineral scale formation and maintain smooth operations.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Stabilizing Agents:</strong> Ensure the stability of emulsions and suspensions.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Surfactants:</strong> Improve wetting properties and enhance cleaning processes.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Coagulants:</strong> Facilitate the removal of impurities from water.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Emulsifiers:</strong> Promote the formation and stability of emulsions.
+              </li>
+              <li style={{ marginBottom: '0.5rem' }}>
+                <strong>Cleaners:</strong> Remove contaminants and maintain equipment cleanliness.
+              </li>
+            </ul>
+          </div>
+        </section>
+        {/* Navigation Section */}
         <ProjectDetailsNavigation />
       </main>
 
-      {/* ========== footer section ========== */}
       <Footer8 />
     </Fragment>
   );

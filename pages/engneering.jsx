@@ -24,7 +24,7 @@ const ProjectDetails = () => {
         /* ========== heading section ========== */
       }
         <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-        backgroundImage: 'url(/img/photos/bg29.jpg)'
+        backgroundImage: 'url()'
       }}>
           <div className="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
             <div className="row">
@@ -43,19 +43,6 @@ const ProjectDetails = () => {
           </div>
         </section>
 
-        <section className="wrapper bg-light wrapper-border">
-          {
-          /* ========== details section ========== */
-        }
-          <div className="container pt-14 pt-md-16 pb-13 pb-md-15">
-            <ProjectDetailsContent title="About the Yophiel" />
-          </div>
-
-          {
-          /* ========== portfolio section ========== */
-        }
-          <Portfolio1 />
-        </section>
 
         {
         /* ========== navigation section ========== */

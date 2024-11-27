@@ -151,58 +151,30 @@ export const blogList4 = [{
 
 export const blogList5 = [{
   id: 1,
-  comments: 3,
-  author: 'Sandbox',
-  category: 'Places',
-  createdAt: '8 Aug 2022',
+
   image: '/img/photos/tb1.jpg',
-  title: 'The Best Moments in Venice'
 }, {
   id: 2,
-  comments: 5,
-  author: 'Sandbox',
-  category: 'Restaurants',
-  createdAt: '5 Jul 2022',
+
   image: '/img/photos/tb2.jpg',
-  title: '10 Great Places in Belgium'
 }, {
   id: 3,
-  comments: 8,
-  author: 'Sandbox',
-  category: 'Roadtrip',
-  createdAt: '23 Jun 2022',
+
   image: '/img/photos/tb3.jpg',
-  title: 'A Dreamy Roadtrip in Australia'
 }, {
   id: 4,
-  comments: 9,
-  author: 'Sandbox',
-  category: 'Historic',
-  createdAt: '15 Apr 2022',
+
   image: '/img/photos/tb4.jpg',
-  title: 'My Love Affair with Cappadocia'
 }, {
   id: 5,
-  comments: 11,
-  author: 'Sandbox',
-  category: 'Nature',
-  createdAt: '14 Feb 2022',
+
   image: '/img/photos/tb5.jpg',
-  title: '24 Hours in a Village of Valencia'
 }, {
   id: 6,
-  comments: 8,
-  author: 'Sandbox',
-  category: 'Architecture',
-  createdAt: '22 Jan 2022',
+
   image: '/img/photos/tb6.jpg',
-  title: 'The Largest Train Station in Europe'
 }, {
   id: 7,
-  comments: 14,
-  author: 'Sandbox',
-  category: 'Nature',
-  createdAt: '2 Jan 2022',
+
   image: '/img/photos/tb7.jpg',
-  title: 'The Natural Places in Brazil'
 }];
