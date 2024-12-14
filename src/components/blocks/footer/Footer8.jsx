@@ -6,9 +6,15 @@ import footerNav from 'data/footer';
 
 const Footer8 = () => {
   return <footer className="bg-white">
+<<<<<<< Updated upstream
       <div className="container py-13 py-md-15">
         <div className="row gy-6 gy-lg-0  ms-18">
           <div className="col-md-5 col-lg-4">
+=======
+      <div className="container py-20 py-md-10">
+        <div className="row gy-6 gy-lg-0">
+          <div className="col-md-4 col-lg-3">
+>>>>>>> Stashed changes
             <div className="widget">
               <img className="mb-4" src="\img\yophiel-logo-trans.png" alt="" />
 

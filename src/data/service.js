@@ -269,7 +269,7 @@ export const serviceList9 = [{
 
 export const serviceList10 = [{
   id: 1,
-  linkUrl: '#',
+  linkUrl: 'business line',
   Icon: Script,
   title: 'OILFIELD & REFINERY CHMICALS',
   description: `Biocides, Corrosion Inhibitors, Scale Inhibitors, Stabilizing Agents, Surfactants, Coagulants, Emulsifiers, Cleaners, And much more...`
