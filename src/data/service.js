@@ -267,43 +267,53 @@ export const serviceList9 = [{
   description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo.`
 }]; // used in the services-20 block
 
-export const serviceList10 = [{
-  id: 1,
-  linkUrl: 'business line',
-  Icon: Script,
-  title: 'OILFIELD & REFINERY CHMICALS',
-  description: `Biocides, Corrosion Inhibitors, Scale Inhibitors, Stabilizing Agents, Surfactants, Coagulants, Emulsifiers, Cleaners, And much more...`
-}, {
-  id: 2,
-  linkUrl: '#',
-  Icon: Verify,
-  title: 'LUBRICANTS & GREASE ADDITIVES',
-  description: `Lithum Hydroxide, Frication Modifiers, Pour Point Depressants, Antiwear, Extreme Pressure, Tarckifiers, Antioxidants, And much more...`
-}, {
-  id: 3,
-  linkUrl: '#',
-  Icon: CloudNetwork,
-  title: 'PERSONL & HOME CARE',
-  description: `Surfactants , Foam Booster, Fatty Esters, Paraffin Oils, Fatty Alcohols, Emulsifiers, Biocides & Preservatives, And much more...`
-}, {
-  id: 4,
-  linkUrl: '#',
-  Icon: Director,
-  title: 'PLASTICS & RUBBER CHEMICALS',
-  description: `Polymers (PE/PP/PVC/PC/PET), Desiccants, Stabilizers(LEAD/Ca-Zn/TIN), Plasticiers (DOP/ESBO/CPW), Anti-Block Agent, Other Chemicals & Oils...`
-}, {
-  id: 5,
-  linkUrl: '#',
-  Icon: Setting,
-  title: 'WATER TREATMENT CHEMICALS',
-  description: `Please keep this page blank for now. Will provide the list of chemicals shortly.`
-}, /*{
-  id: 6,
-  linkUrl: '#',
-  Icon: Server,
-  title: 'Server Configuration',
-  description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-}*/ ]; // used in the services-21 block
+export const serviceList10 = [
+  {
+    id: 1,
+    linkUrl: 'business line',
+    Icon: Script,
+    title: 'OILFIELD & REFINERY CHEMICALS',
+    backgroundImage: '/img/cardimg/Oilfileld.jpg', // Correct path for React projects
+  },
+  
+  {
+    id: 2,
+    linkUrl: '#',
+    Icon: Verify,
+    title: 'LUBRICANTS & GREASE ADDITIVES',
+    backgroundImage: '/img/cardimg/lubricant.jpg', // Replace with the actual image path
+  },
+  {
+    id: 3,
+    linkUrl: '#',
+    Icon: CloudNetwork,
+    title: 'PERSONAL & HOME CARE',
+    backgroundImage: '/img/cardimg/images.jpg', // Replace with the actual image path
+  },
+  {
+    id: 4,
+    linkUrl: '#',
+    Icon: Director,
+    title: 'PLASTICS & RUBBER CHEMICALS',
+    backgroundImage: '/img/cardimg/plastic.jpg', // Replace with the actual image path
+  },
+  {
+    id: 5,
+    linkUrl: '#',
+    Icon: Setting,
+    title: 'WATER TREATMENT CHEMICALS',
+    backgroundImage: '/img/cardimg/water.jpg', // Replace with the actual image path
+  },
+  // Uncomment and add more entries as needed
+  /*{
+    id: 6,
+    linkUrl: '#',
+    Icon: Server,
+    title: 'Server Configuration',
+    description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.',
+    backgroundImage: 'path/to/image6.jpg', // Replace with the actual image path
+  }*/
+];
 
 export const serviceList11 = [{
   id: 1,
