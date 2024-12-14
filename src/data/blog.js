@@ -178,3 +178,33 @@ export const blogList5 = [{
 
   image: '/img/photos/tb7.jpg',
 }];
+
+export const blogList6 = [{
+  id: 1,
+
+  image: '/img/photos/tb1.jpg',
+}, {
+  id: 2,
+
+  image: '/img/photos/tb2.jpg',
+}, {
+  id: 3,
+
+  image: '/img/photos/tb3.jpg',
+}, {
+  id: 4,
+
+  image: '/img/photos/tb4.jpg',
+}, {
+  id: 5,
+
+  image: '/img/photos/tb5.jpg',
+}, {
+  id: 6,
+
+  image: '/img/photos/tb6.jpg',
+}, {
+  id: 7,
+
+  image: '/img/photos/tb7.jpg',
+}];

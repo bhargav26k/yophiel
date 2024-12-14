@@ -66,13 +66,13 @@ const ProjectDetails = () => {
 
       <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
         {/* Oil Refinery Section */}
-        <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <section style={{ backgroundColor: '#f3f8fc', padding: '1rem 0' }}>
+          <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
             <div style={{ margin: '0 auto', maxWidth: '600px' }}>
               <div className="post-header">
-                <div className="post-category text-line">
+                {/* <div className="post-category text-line">
                   <NextLink title="YOPHIEL" href="#" className="hover" />
-                </div>
+                </div> */}
 
                 <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
                   Oilfield & Refinery Chemicals

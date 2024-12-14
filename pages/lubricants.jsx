@@ -7,7 +7,7 @@ import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
 import NextLink from 'components/reuseable/links/NextLink';
-
+import {Hero25} from 'components/blocks/hero';
 // -------- data -------- //
 const images = [
   '/img/photos/Greaseimg.jpeg',
@@ -48,14 +48,14 @@ const ProjectDetails = () => {
 
       <main style={{ backgroundColor: '#ffffff', color: '#333333' }}>
         {/* Heading Section */}
-        <section style={{ backgroundColor: '#f3f8fc', padding: '4rem 0' }}>
+        <section style={{ backgroundColor: '#f3f8fc', padding: '1rem 0' }}>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div style={{ margin: '0 auto', maxWidth: '600px' }}>
               <div className="post-header">
-                <div className="post-category text-line">
+                {/* <div className="post-category text-line">
                   <NextLink title="YOPHIEL" href="#" className="hover" />
-                </div>
-                <h1 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>
+                </div> */}
+                <h1 style={{ fontSize: '2.5rem', margin: '' }}>
                   Lubricants & Grease Additives
                 </h1>
                 <p style={{ fontSize: '1.2rem', padding: '0 2rem' }}>
@@ -66,8 +66,10 @@ const ProjectDetails = () => {
           </div>
         </section>
 
+        <Hero25></Hero25>
+
         {/* Image Slider Section */}
-        <section
+        {/* <section
           style={{
             backgroundColor: '#f9f9f9',
             borderTop: '1px solid #e0e0e0',
@@ -79,7 +81,6 @@ const ProjectDetails = () => {
             textAlign: 'center',
           }}
         >
-          {/* Image Container */}
           <div
             style={{
               width: '100%',
@@ -104,7 +105,6 @@ const ProjectDetails = () => {
               />
             </figure>
 
-            {/* Slider Buttons */}
             <button
               onClick={handlePrev}
               style={{
@@ -144,7 +144,7 @@ const ProjectDetails = () => {
               &gt;
             </button>
           </div>
-        </section>
+        </section> */}
  {/* Improved Information Section */}
  <section
           style={{
@@ -224,7 +224,7 @@ const ProjectDetails = () => {
           </div>
         </section>
         {/* Navigation Section */}
-        <ProjectDetailsNavigation />
+        {/* <ProjectDetailsNavigation /> */}
       </main>
 
       <Footer8 />
