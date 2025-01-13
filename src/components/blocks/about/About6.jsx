@@ -15,7 +15,7 @@ const About6 = () => {
         {/* If you want to display the Megaphone icon, uncomment the line below */}
         {/* <Megaphone className="icon-svg-md mb-4" /> */}
 
-        <h2 className="display-4 mb-3">Who Are We?</h2>
+        
 
         <p className="lead fs-lg">
           Welcome to the global arena of chemicals, engineering, and resource management, where
@@ -56,7 +56,9 @@ const About6 = () => {
           customer-centric approach can propel your endeavors to new heights of success.
         </p>
 
-        <ListColumn rowClass="gx-xl-8" list={aboutList2} />
+       
+
+       
       </div>
     </div>
   );

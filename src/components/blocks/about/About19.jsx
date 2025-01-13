@@ -7,13 +7,11 @@ import { aboutList2, aboutList3 } from 'data/about';
 const About19 = () => {
   return <Fragment>
       <div className="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mb-10 mb-md-12">
-        <div className="col-lg-6">
-          <Tiles11 />
-        </div>
+        
 
-        <div className="col-lg-6">
-          <h2 className="fs-16 text-uppercase text-gradient gradient-1 mb-3">Who Are We?</h2>
-          <h3 className="display-4 mb-4"> Welcome to the forefront of Chemicals and Engineering.</h3>
+        <div className="col-lg-11">
+          <h2 className="fs-16 text-uppercase text-gradient gradient-1 mb-3"></h2>
+          <h3 className="display-4 mb-2 text-uppercase text-gradient gradient-8 mb-5 text-center"> Welcome to the forefront of Chemicals and Engineering.</h3>
           <p className="mb-6">
   Yophiel Internationals is a global leader in chemical distribution and engineering services, established in India in 2023.
   <br></br>
@@ -25,7 +23,7 @@ const About19 = () => {
 </p>
 
 
-          <ListColumn rowClass="gx-xl-8" list={aboutList2} />
+          {/* <ListColumn rowClass="gx-xl-8" list={aboutList2} /> */}
         </div>
       </div>
 

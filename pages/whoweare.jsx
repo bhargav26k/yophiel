@@ -31,8 +31,8 @@ const Whoweare = () => {
           <div className="container pt-10 pt-md-14 text-center">
             <div className="row">
               <div className="col-xl-6 mx-auto">
-                <h1 className="display-1 mb-4">Hello! This is Yophiel</h1>
-                <p className="lead fs-lg mb-0">A company turning ideas into beautiful things.</p>
+                <h1 className="display-1 mb-4 text-uppercase text-gradient gradient-8 mb-3">Who we Are</h1>
+                <p className="lead fs-lg mb-0"></p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Whoweare = () => {
             /* ========== process section ========== */
           }
             {/* <Process7 /> */}
-        {/* <Contact7 /> */}
+      
 
           </div>
         </section>

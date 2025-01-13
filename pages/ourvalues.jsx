@@ -56,8 +56,8 @@ const Ourvalues = () => {
           <div className="container pt-10 pb-25 pt-md-14 pb-md-23 text-center">
             <div className="row">
               <div className="col-xl-5 mx-auto mb-6">
-                <h1 className="display-1 mb-3">Our Values</h1>
-                <p className="lead mb-0">Yophiel Internationals has always been a value driven organization.</p>
+                <h1 className="display-1 mb-3 text-gradient gradient-8">Our Values</h1>
+               
               </div>
             </div>
           </div>
@@ -69,9 +69,9 @@ const Ourvalues = () => {
         <section className="wrapper bg-light">
           <div className="container pb-12 pb-md-4">
             <div className="row text-center mb-12 mb-md-15">
-              <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-n18 mt-md-n22">
+              <div className="col-md-12 offset-md-1 col-lg-8 offset-lg-2 mt-n18 mt-md-n22">
                 <figure>
-                  <img alt="" className="w-auto" src="/img/illustrations/i8.png" srcSet="/img/illustrations/i8@2x.png 2x" />
+                  <img alt="" className="w-auto" src="/img/photos/bg12.jpg" srcSet="/img/photos/bg12.jpg" />
                 </figure>
               </div>
             </div>
@@ -81,8 +81,8 @@ const Ourvalues = () => {
                 <ProgressList />
               </div> */}
 
-              <div className="col-lg-20">
-                <h3 className="display-5 mb-5">
+              <div className="col-lg-20 text-center">
+                <h3 className="display-5 mb-5 text-uppercase text-gradient gradient-8 mb-3">
                 Business, as I have seen it, places one great demand on you: it needs
                 you to self-impose a framework of ethics, values, fairness and
                 objectivity on yourself at all times.” - Ratan N Tata
@@ -120,11 +120,11 @@ const Ourvalues = () => {
             <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-7 order-lg-2">
                 <figure>
-                  <img alt="" className="w-auto" src="/img/illustrations/i2.png" srcSet="/img/illustrations/i2@2x.png 2x" />
+                  <img alt="" className="w-auto" src="" />
                 </figure>
               </div>
 
-              <div className="col-lg-5">
+              <div className="col-lg-12">
                 <h2 className="fs-15 text-uppercase text-line text-primary mb-3">CODE OF VALUES</h2>
                 <h3 className="display-5 mb-7">A few reasons why our valued customers choose us.</h3>
                 <AccordionList />
@@ -171,58 +171,7 @@ const Ourvalues = () => {
         {
         /* ========== contact section ========== */
       }
-        <section className="wrapper bg-light">
-          <div className="container py-14 py-md-5">
-            <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-              <div className="col-lg-7">
-                <figure>
-                  <img alt="" className="w-auto" src="/img/illustrations/i5.png" srcSet="/img/illustrations/i5@2x.png 2x" />
-                </figure>
-              </div>
-
-              <div className="col-lg-5">
-                <h3 className="display-4 mb-7">Got any questions? Don't hesitate to get in touch.</h3>
-                <div className="d-flex flex-row">
-                  <div>
-                    <div className="icon text-primary fs-28 me-4 mt-n1">
-                      <i className="uil uil-location-pin-alt" />
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="mb-1">Address</h5>
-                    <address>F-705, West Coast Park, Shivane, Pune, MH, IND 411 023</address>
-                  </div>
-                </div>
-                <div className="d-flex flex-row">
-                  <div>
-                    <div className="icon text-primary fs-28 me-4 mt-n1">
-                      <i className="uil uil-phone-volume" />
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="mb-1">Phone</h5>
-                    <p>+91 9637422525</p>
-                  </div>
-                </div>
-                <div className="d-flex flex-row">
-                  <div>
-                    <div className="icon text-primary fs-28 me-4 mt-n1">
-                      <i className="uil uil-envelope" />
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="mb-1">E-mail</h5>
-                    <p className="mb-0">
-                      <a href="mailto:business@yophiel.net" className="link-body">
-                      business@yophiel.net
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
       </main>
 
       {
