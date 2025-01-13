@@ -270,50 +270,43 @@ export const serviceList9 = [{
 export const serviceList10 = [
   {
     id: 1,
-    linkUrl: 'business line',
+    linkUrl: '/oilfield',  // Change this to the actual route for the Oilfield page
     Icon: Script,
     title: 'OILFIELD & REFINERY CHEMICALS',
-    backgroundImage: '/img/cardimg/Oilfileld.jpg', // Correct path for React projects
+    backgroundImage: '/img/cardimg/Oilfileld.jpg',
   },
   
   {
     id: 2,
-    linkUrl: '#',
+    linkUrl: '/lubricants',  // Change this to the actual route for the Lubricant page
     Icon: Verify,
     title: 'LUBRICANTS & GREASE ADDITIVES',
-    backgroundImage: '/img/cardimg/lubricant.jpg', // Replace with the actual image path
+    backgroundImage: '/img/cardimg/lubricant.jpg',
   },
   {
     id: 3,
-    linkUrl: '#',
+    linkUrl: '/personal',  // Change this to the actual route for Personal & Home Care page
     Icon: CloudNetwork,
     title: 'PERSONAL & HOME CARE',
-    backgroundImage: '/img/cardimg/images.jpg', // Replace with the actual image path
+    backgroundImage: '/img/cardimg/images.jpg',
   },
   {
     id: 4,
-    linkUrl: '#',
+    linkUrl: '/plastics',  // Change this to the actual route for Plastics & Rubber page
     Icon: Director,
     title: 'PLASTICS & RUBBER CHEMICALS',
-    backgroundImage: '/img/cardimg/plastic.jpg', // Replace with the actual image path
+    backgroundImage: '/img/cardimg/plastic.jpg',
   },
   {
     id: 5,
-    linkUrl: '#',
+    linkUrl: '/treatment',  // Change this to the actual route for Water Treatment page
     Icon: Setting,
     title: 'WATER TREATMENT CHEMICALS',
-    backgroundImage: '/img/cardimg/water.jpg', // Replace with the actual image path
+    backgroundImage: '/img/cardimg/water.jpg',
   },
-  // Uncomment and add more entries as needed
-  /*{
-    id: 6,
-    linkUrl: '#',
-    Icon: Server,
-    title: 'Server Configuration',
-    description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.',
-    backgroundImage: 'path/to/image6.jpg', // Replace with the actual image path
-  }*/
 ];
+
+ 
 
 export const serviceList11 = [{
   id: 1,
