@@ -32,4 +32,6 @@ import Hero31 from './Hero31';
 import Hero32 from './Hero32';
 import Hero33 from './Hero33';
 import Hero34 from './Hero34';
-export { Hero1, Hero2, Hero3, Hero4, Hero5, Hero6, Hero7, Hero8, Hero9, Hero10, Hero11, Hero12, Hero13, Hero14, Hero15, Hero16, Hero17, Hero18, Hero19, Hero20, Hero21, Hero22, Hero23, Hero24, Hero25, Hero26, Hero27, Hero28, Hero29, Hero30, Hero31, Hero32, Hero33, Hero34 };
+import Hero99 from './Hero99';
+
+export { Hero1, Hero2, Hero3, Hero4, Hero5, Hero6, Hero7, Hero8, Hero9, Hero10, Hero11, Hero12, Hero13, Hero14, Hero15, Hero16, Hero17, Hero18, Hero19, Hero20, Hero21, Hero22, Hero23, Hero24, Hero25, Hero26, Hero27, Hero28, Hero29, Hero30, Hero31, Hero32, Hero33, Hero34, Hero99 };

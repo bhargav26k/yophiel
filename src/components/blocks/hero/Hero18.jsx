@@ -95,45 +95,46 @@ const Hero18 = () => {
   return (
     <section className="wrapper bg-light" style={{ margin: '0 25px', textAlign: 'center' }}>
       <Slider {...settings}>
-        {slides.map((slide) => (
-          <figure key={slide.id} className="rounded-container">
-            <div
-              className="card image-wrapper rounded"
-              style={{
-                backgroundImage: `url(${slide.image})`,
-                height: '80vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                position: 'relative',
-                overflow: 'hidden', // Ensure the border radius is respected
-              }}
-            >
-              <div
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                  borderRadius: 'inherit', // Ensure overlay respects border radius
-                }}
-              />
-              <h1
-                className="display-2"
-                style={{
-                  zIndex: 2,
-                  color: '#fff',
-                  fontWeight: 'bold',
-                }}
-              >
-                {slide.heading}
-              </h1>
-            </div>
-          </figure>
-        ))}
-      </Slider>
+  {slides.map((slide) => (
+    <figure key={slide.id} className="rounded-container">
+      <div
+        className="card image-wrapper rounded"
+        style={{
+          backgroundImage: `url(${slide.image})`,
+          height: window.innerWidth > 768 ? '80vh' : '40vh', // 80vh for desktop, 40vh for mobile
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'relative',
+          overflow: 'hidden', // Ensure the border radius is respected
+        }}
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            borderRadius: 'inherit', // Ensure overlay respects border radius
+          }}
+        />
+        <h1
+          className="display-2"
+          style={{
+            zIndex: 2,
+            color: '#fff',
+            fontWeight: 'bold',
+          }}
+        >
+          {slide.heading}
+        </h1>
+      </div>
+    </figure>
+  ))}
+</Slider>
+
       <style jsx>{`
         .rounded-container {
           padding: 10px;

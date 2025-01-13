@@ -7,7 +7,20 @@ import Headphone from 'icons/solid-mono/Headphone'; // =========================
 
 export const aboutList1 = [['Lead globally in chemicals and engineering through innovation and excellence.', 'Deliver innovative services that maximize client productivity and profitability.'], ['Customer-centric excellence', 'Highest standards of ethics and integrity in every aspect of our business operations.']]; // used in the about-6, about-19 block
 
-export const aboutList2 = [['Built on ethics and integrity, we strive to lead the industry.', 'We offer energy management, maintenance contracts, tolling, blending, and raw material procurement.'], ['Our technical team and partners provide a wide range of performance products.', 'Our global network and industry expertise deliver solutions to boost productivity and profit.']]; // used in the about-6, about-19 block
+export const aboutList2 = [
+  [
+    'Built on unwavering ethics and integrity, we continuously strive to set new industry standards.',
+    'We offer comprehensive services including energy management, maintenance contracts, tolling, blending, and raw material procurement to ensure seamless operations.',
+    'Our commitment to sustainability drives us to minimize environmental impact through responsible resource management and innovative processes.',
+    'We stay ahead of market trends by adapting solutions to evolving global needs, helping clients maintain a competitive edge.'
+  ],
+  [
+    'Our dedicated technical team, in partnership with world-class suppliers, delivers a broad portfolio of high-performance, industry-certified products.',
+    'Leveraging our expansive global network, we bring you targeted solutions that enhance productivity, profitability, and supply chain resilience.',
+    'By integrating advanced analytics and process optimization tools, we streamline operations and mitigate risks at every stage of your project.',
+    'We take a customer-centric approach, ensuring personalized support, rapid response times, and long-term value creation for all our partners.'
+  ]
+];
 
 export const aboutList3 = [{
   id: 1,

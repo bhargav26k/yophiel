@@ -10,6 +10,8 @@ import { Contact7 } from 'components/blocks/contact';
 import { Testimonial5 } from 'components/blocks/testimonial';
 import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
+import { Hero99} from 'components/blocks/hero';
+
 
 const Whoweare = () => {
   return <Fragment>
@@ -24,7 +26,8 @@ const Whoweare = () => {
         {
         /* ========== page title section ========== */
       }
-        <section className="wrapper bg-gray">
+      <Hero99 />
+        {/* <section className="wrapper bg-gray">
           <div className="container pt-10 pt-md-14 text-center">
             <div className="row">
               <div className="col-xl-6 mx-auto">
@@ -39,10 +42,10 @@ const Whoweare = () => {
           left: 0,
           zIndex: 2
         }} />
-        </section>
+        </section> */}
 
-        <section className="wrapper bg-light angled upper-end lower-end">
-          <div className="container py-14 py-md-16">
+        <section className="wrapper bg-light  upper-end lower-end">
+          <div className="container py-7 py-md-8">
             {
             /* ========== about section ========== */
           }
@@ -52,7 +55,7 @@ const Whoweare = () => {
             /* ========== process section ========== */
           }
             {/* <Process7 /> */}
-        <Contact7 />
+        {/* <Contact7 /> */}
 
           </div>
         </section>

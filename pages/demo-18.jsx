@@ -37,7 +37,7 @@ const Demo18 = () => {
 
 
         <section className="wrapper bg-light">
-          <div className="container pt-14 pt-md-17 pb-14 pb-md-18">
+          <div className="container pt-14 pt-md-17">
             {
             /* ========== what we do section ========== */
           }
@@ -54,7 +54,7 @@ const Demo18 = () => {
             /* ========== what makes section ========== */
           }
     
-          <Contact7 />
+          {/* <Contact7 /> */}
 
           </div>
         </section>
