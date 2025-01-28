@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Fragment, useRef } from 'react'; 
+import { Fragment, useRef } from 'react';
 import useSticky from 'hooks/useSticky';
-import useNestedDropdown from 'hooks/useNestedDropdown'; 
+import useNestedDropdown from 'hooks/useNestedDropdown';
 
 import NextLink from 'components/reuseable/links/NextLink';
 import SocialLinks from 'components/reuseable/SocialLinks';
@@ -38,9 +38,9 @@ const Navbar = (props) => {
 
   useNestedDropdown();
   const sticky = useSticky(350);
-  const navbarRef = useRef(null); 
+  const navbarRef = useRef(null);
 
-  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark'; 
+  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark';
   const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed';
 
   const renderLinks = (links) => {
@@ -51,9 +51,18 @@ const Navbar = (props) => {
 
   const headerContent = (
     <Fragment>
-      <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/yophiel-logo-trans.png`} />} />
-      </div>
+     <div className="navbar-brand w-100">
+  <NextLink
+    href="/"
+    title={
+      <img
+        alt="logo"
+        src={`/img/Website/Page Logo 1.png`}
+        style={{ width: '100px', height: 'auto' }} // Adjust width and height as needed
+      />
+    }
+  />
+</div>
 
       <div
         id="offcanvas-nav"
@@ -71,37 +80,37 @@ const Navbar = (props) => {
         </div>
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav" style={{color:'rgb(0, 0, 0)'}}>
             <li className="nav-item dropdown">
-              <DropdownToggleLink title="About Us" className="nav-link dropdown-toggle" />
+              <DropdownToggleLink title="About Us" className="nav-link dropdown-toggle" style={{color:'rgb(0, 0, 0)'}} />
               <ul className="dropdown-menu">
-                <ListItemLink href="/whoweare" title="Who we are" linkClassName="dropdown-item" />
-                <ListItemLink href="/ourvalues" title="Our Values" linkClassName="dropdown-item" />
+                <ListItemLink href="/whoweare" title="Who we are" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/ourvalues" title="Our Values" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <DropdownToggleLink title="Business Lines" className="nav-link dropdown-toggle" />
+              <DropdownToggleLink title="Business Lines" className="nav-link dropdown-toggle" style={{color:'rgb(0, 0, 0)'}} />
               <ul className="dropdown-menu">
-                <ListItemLink href="/oilfield" title="Oilfield & Refinery Chemicals" linkClassName="dropdown-item" />
-                <ListItemLink href="/lubricants" title="Lubricants & Grease Additives" linkClassName="dropdown-item" />
-                <ListItemLink href="/personal" title="Personal & Home Care" linkClassName="dropdown-item" />
-                <ListItemLink href="/plastics" title="Plastics & Rubber" linkClassName="dropdown-item" />
-                <ListItemLink href="/treatment" title="Water Treatment Chemicals" linkClassName="dropdown-item" />
+                <ListItemLink href="/oilfield" title="Oilfield & Refinery Chemicals" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/lubricants" title="Lubricants & Grease Additives" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/personal" title="Personal & Home Care" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/plastics" title="Plastics & Rubber" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/treatment" title="Water Treatment Chemicals" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Resources" className="nav-link dropdown-toggle" />
+            <li className="nav-item dropdown" style={{color:'rgb(0, 0, 0)'}}>
+              <DropdownToggleLink title="Resources" className="nav-link dropdown-toggle" style={{color:'rgb(0, 0, 0)'}} />
               <ul className="dropdown-menu">
-                <ListItemLink href="/engneering" title="Engineering Services" linkClassName="dropdown-item" />
-                <ListItemLink href="/procurement" title="Procurement" linkClassName="dropdown-item" />
-                <ListItemLink href="/contracts" title="Maintenance Contracts" linkClassName="dropdown-item" />
+                <ListItemLink href="/engneering" title="Engineering Services" linkClassName="dropdown-item" style={{ color: 'rgb(1, 1, 1)' }} />
+                <ListItemLink href="/procurement" title="Procurement" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
+                <ListItemLink href="/contracts" title="Maintenance Contracts" linkClassName="dropdown-item" style={{ color: '#4A90E2' }} />
               </ul>
             </li>
 
             <li className="nav-item dropdown dropdown-mega">
-              <NavLinko title="Contact Us" href="/contact-2" className="nav-link" />
+              <NavLinko title="Contact Us" href="/contact-2" className="nav-link" style={{color:'rgb(0, 0, 0)'}} />
             </li>
           </ul>
 
@@ -110,15 +119,16 @@ const Navbar = (props) => {
             <Buttono
               title="Download Brochure"
               className="btn btn-primary w-100"
+              style={{ backgroundColor: '#4A90E2', borderColor: '#4A90E2' }}
               downloadLink="https://pdfobject.com/pdf/sample.pdf"
             />
           </div>
 
           <div className="offcanvas-footer d-lg-none mt-auto">
             <div>
-              <NextLink title="info@yophiel.net" className="link-inverse" href="mailto:info@yophiel.net" />
+              <NextLink title="info@yophiel.net" className="link-inverse" href="mailto:info@yophiel.net" style={{ color: '#4A90E2' }} />
               <br />
-              <NextLink href="tel:9637422525" title="+91-9637422525" />
+              <NextLink href="tel:9637422525" title="+91-9637422525" style={{ color: '#4A90E2' }} />
               <br />
               <SocialLinks />
             </div>
@@ -131,7 +141,7 @@ const Navbar = (props) => {
           {info && (
             <li className="nav-item">
               <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info">
-                <i className="uil uil-info-circle" />
+                <i className="uil uil-info-circle" style={{ color: '#4A90E2' }} />
               </a>
             </li>
           )}
@@ -139,7 +149,7 @@ const Navbar = (props) => {
           {search && (
             <li className="nav-item">
               <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
-                <i className="uil uil-search" />
+                <i className="uil uil-search" style={{ color: '#4A90E2' }} />
               </a>
             </li>
           )}
@@ -160,10 +170,12 @@ const Navbar = (props) => {
           <Buttono
             title="Download Brochure"
             className="btn btn-primary"
+            style={{ backgroundColor: ' #04b5ac', borderColor: ' #04b5ac' }}
             downloadLink="https://pdfobject.com/pdf/sample.pdf"
           />
         </div>
       </div>
+      
     </Fragment>
   );
 
@@ -171,7 +183,7 @@ const Navbar = (props) => {
     <Fragment>
       {stickyBox && <div style={{ paddingTop: sticky ? navbarRef.current?.clientHeight : 0 }} />}
 
-      <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
+      <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName} style={{ backgroundColor: '#F5F5F5' }}>
         {fancy ? (
           <div className="container">
             <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
@@ -179,7 +191,7 @@ const Navbar = (props) => {
             </div>
           </div>
         ) : (
-          <div className="container flex-lg-row flex-nowrap align-items-center">{headerContent}</div>
+          <div className="container flex-lg-row flex-nowrap align-items-center mb-3">{headerContent}</div>
         )}
       </nav>
 
@@ -188,6 +200,8 @@ const Navbar = (props) => {
       {info && <Info />}
       {search && <Search />}
       {cart && <MiniCart />}
+      <div className='mb-10' style={{ borderBottom: '2px solid rgb(74, 226, 163)', margin: '0' }} />
+      <div></div>
     </Fragment>
   );
 };

@@ -2,7 +2,7 @@ import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Team8 } from 'components/blocks/team';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Clients1 } from 'components/blocks/clients';
 import { Process8 } from 'components/blocks/process';
 import Carousel from 'components/reuseable/Carousel';
@@ -177,7 +177,7 @@ const Ourvalues = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <Footer11 />
     </Fragment>;
 };
 

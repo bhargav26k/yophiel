@@ -10,11 +10,11 @@ const Footer8 = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="\img\yophiel-logo-trans.png" alt="" />
+              <img className="mb-4" src="/img/Website/Page Logo 1.png" alt="" />
 
               <p className="mb-4">
   © {new Date().getFullYear()} yophiel.net <br className="d-none d-lg-block" />
-  All rights reserved.
+  All right reserved.
 </p>
 
               <SocialLinks className="nav social" />
