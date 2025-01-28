@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -116,7 +116,7 @@ const ProjectDetails = () => {
         </section>
       </main>
 
-      <Footer8 />
+      <footer11 />
     </Fragment>
   );
 };

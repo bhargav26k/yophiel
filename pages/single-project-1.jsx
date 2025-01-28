@@ -4,7 +4,7 @@ import { Fragment } from 'react'; // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
@@ -104,7 +104,7 @@ const ProjectDetails = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

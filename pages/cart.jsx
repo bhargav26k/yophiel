@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import currency from 'utils/currency'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import ShopService from 'components/common/ShopService';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
@@ -124,7 +124,7 @@ const Cart = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

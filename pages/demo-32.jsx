@@ -3,7 +3,7 @@ import { Blog8 } from 'components/blocks/blog';
 import { Team9 } from 'components/blocks/team';
 import { Hero32 } from 'components/blocks/hero';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import { CTA12 } from 'components/blocks/call-to-action';
 import { About32, About33 } from 'components/blocks/about';
 import { Testimonial26 } from 'components/blocks/testimonial';
@@ -111,7 +111,7 @@ const Demo32 = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </div>;
 };
 

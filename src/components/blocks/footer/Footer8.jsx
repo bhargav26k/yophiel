@@ -4,7 +4,7 @@ import SocialLinks from 'components/reuseable/SocialLinks'; // -------- data ---
 
 import footerNav from 'data/footer';
 
-const Footer8 = () => {
+const footer11 = () => {
   return <footer className="bg-white">
       <div className="container py-20 py-md-10">
         <div className="row gy-6 gy-lg-0">
@@ -89,4 +89,4 @@ const Footer8 = () => {
     </footer>;
 };
 
-export default Footer8;
+export default footer11;

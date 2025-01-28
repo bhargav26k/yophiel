@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import BlogSidebar from 'components/reuseable/BlogSidebar';
 import NextLink from 'components/reuseable/links/NextLink';
@@ -93,7 +93,7 @@ const BlogDetailsThree = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

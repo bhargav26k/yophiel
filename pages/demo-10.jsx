@@ -7,7 +7,7 @@ import { Hero10 } from 'components/blocks/hero';
 import { Facts7 } from 'components/blocks/facts';
 import { About11 } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import { Contact5 } from 'components/blocks/contact';
 import { Clients1 } from 'components/blocks/clients';
 import { Tiles8, Tiles9 } from 'components/elements/tiles';
@@ -91,7 +91,7 @@ const Demo10 = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

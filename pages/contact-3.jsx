@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import { Contact2 } from 'components/blocks/contact';
 import PageProgress from 'components/common/PageProgress';
 import ContactForm from 'components/common/ContactForm';
@@ -131,7 +131,7 @@ const ContactThree = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

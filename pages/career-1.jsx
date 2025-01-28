@@ -4,7 +4,7 @@ import useIsotope from 'hooks/useIsotope'; // -------- custom component --------
 
 import { FAQ2 } from 'components/blocks/faq';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import { JobPostCard1 } from 'components/reuseable/job-cards';
 import { ServiceCard3 } from 'components/reuseable/service-cards';
 import { TestimonialCard3 } from 'components/reuseable/testimonial-cards';
@@ -146,7 +146,7 @@ const Career = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 

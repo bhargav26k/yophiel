@@ -3,7 +3,7 @@ import { Fragment } from 'react'; // -------- custom component -------- //
 import { About5 } from 'components/blocks/about';
 import { Facts4 } from 'components/blocks/facts';
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { footer11 } from 'components/blocks/footer';
 import { Pricing2 } from 'components/blocks/pricing';
 import { Process4 } from 'components/blocks/process';
 import { Services9 } from 'components/blocks/services';
@@ -123,7 +123,7 @@ const ServicesTwo = () => {
       {
       /* ========== footer section ========== */
     }
-      <Footer8 />
+      <footer11 />
     </Fragment>;
 };
 
