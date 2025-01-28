@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 import { ProjectCard1 } from 'components/reuseable/project-cards'; // -------- custom hook -------- //
@@ -64,7 +64,7 @@ const Projects = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

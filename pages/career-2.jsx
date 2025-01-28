@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 
 const CareerTwo = () => {
@@ -36,7 +36,7 @@ const CareerTwo = () => {
       </main>
 
       {/* Footer Section */}
-      <footer11 />
+      <Footer11 />
     </Fragment>
   );
 };

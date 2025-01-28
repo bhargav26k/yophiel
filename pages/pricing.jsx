@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Pricing2 } from 'components/blocks/pricing';
 import { CTA3 } from 'components/blocks/call-to-action';
 import { TestimonialCard3 } from 'components/reuseable/testimonial-cards';
@@ -134,7 +134,7 @@ const Pricing = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

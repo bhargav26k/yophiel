@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Element, Link as ScrollLink } from 'react-scroll'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink'; // -------- data -------- //
@@ -287,7 +287,7 @@ const Terms = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

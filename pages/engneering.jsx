@@ -1,6 +1,6 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Navbar } from 'components/blocks/navbar';
 import { Portfolio1 } from 'components/blocks/portfolio';
 import PageProgress from 'components/common/PageProgress';
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

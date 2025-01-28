@@ -1,7 +1,7 @@
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import NextLink from 'components/reuseable/links/NextLink';
 import RegisterForm from 'components/elements/forms/RegisterForm'; // -------- data -------- //
@@ -65,7 +65,7 @@ const Register = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

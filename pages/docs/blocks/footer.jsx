@@ -46,7 +46,7 @@ const Footers = () => {
 
       <Block id={8}>
         <div className="pb-13 pb-md-15">
-          <All.footer11 />
+          <All.Footer11 />
         </div>
       </Block>
 

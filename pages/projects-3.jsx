@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Fragment } from 'react'; // -------- custom component -------- //
 
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink'; // -------- custom hook -------- //
 
@@ -242,7 +242,7 @@ const ProjectsThree = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

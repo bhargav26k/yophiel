@@ -6,7 +6,7 @@ import Breadcrumb from 'components/reuseable/Breadcrumb';
 import Pagination from 'components/reuseable/Pagination';
 import PageProgress from 'components/common/PageProgress';
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { ProductCard } from 'components/reuseable/product-cards'; // -------- data -------- //
 
 import products from 'data/product-list';
@@ -95,7 +95,7 @@ const Shop = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

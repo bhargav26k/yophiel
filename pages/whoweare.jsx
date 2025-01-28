@@ -4,7 +4,7 @@ import { Team3 } from 'components/blocks/team';
 import { About6 } from 'components/blocks/about';
 import { Facts5 } from 'components/blocks/facts';
 import { Navbar } from 'components/blocks/navbar';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Process7 } from 'components/blocks/process';
 import { Contact7 } from 'components/blocks/contact';
 import { Testimonial5 } from 'components/blocks/testimonial';
@@ -83,7 +83,7 @@ const Whoweare = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

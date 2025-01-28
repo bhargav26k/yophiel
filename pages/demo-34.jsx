@@ -5,7 +5,7 @@ import CountUp from 'react-countup'; // -------- custom component -------- //
 import { Hero34 } from 'components/blocks/hero';
 import { Navbar } from 'components/blocks/navbar';
 import { Facts21 } from 'components/blocks/facts';
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink'; // -------- custom hooks -------- //
 
@@ -519,7 +519,7 @@ const Demo34 = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

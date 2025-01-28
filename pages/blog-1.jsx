@@ -2,7 +2,7 @@ import Plyr from 'plyr-react';
 import Image from 'next/image';
 import { Fragment } from 'react'; // -------- custom component -------- //
 
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Navbar } from 'components/blocks/navbar';
 import { BlogCard2, BlogCard3 } from 'components/reuseable/blog-cards';
 import Carousel from 'components/reuseable/Carousel';
@@ -135,7 +135,7 @@ const BlogOne = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 

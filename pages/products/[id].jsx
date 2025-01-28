@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'; // -------- custom component -------- //
 
-import { footer11 } from 'components/blocks/footer';
+import { Footer11 } from 'components/blocks/footer';
 import { Navbar } from 'components/blocks/navbar';
 import { ProductCard } from 'components/reuseable/product-cards';
 import Select from 'components/reuseable/Select';
@@ -293,7 +293,7 @@ const ProductDetails = () => {
       {
       /* ========== footer section ========== */
     }
-      <footer11 />
+      <Footer11 />
     </Fragment>;
 };
 
