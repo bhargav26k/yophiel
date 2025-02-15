@@ -22,7 +22,7 @@ const Footer11 = () => {
               <br /> <strong>2020 Company</strong> based in
               <br /> <strong>Switzerland.</strong>
             </p>
-            <SocialLinks className="nav social" />
+           
           </div>
 
           {/* Head Office - INDIA */}
@@ -31,7 +31,7 @@ const Footer11 = () => {
             <address className="pe-xl-15 pe-xxl-17">
               P. O. Box 411023, West Coast Park, Pune, MH, India.
             </address>
-            <NextLink title="info@yophiel.net" href="mailto:info@yophiel.net" className="link-body" />
+            <NextLink title="info@yophiel.net" href="mailto:info@yophiel.net" className="link-body" style='' />
             <br /> +91 9637 422525
           </div>
 

@@ -60,7 +60,7 @@ const Demo18 = () => {
         </section>
         </main>
 
-      <Footer11 />
+      <Footer11/>
     </Fragment>;
 };
 

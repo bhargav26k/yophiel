@@ -5,7 +5,6 @@ import Footer4 from './Footer4';
 import Footer5 from './Footer5';
 import Footer6 from './Footer6';
 import Footer7 from './Footer7';
-import Footer11 from './Footer11';
 import Footer9 from './Footer9';
 import Footer10 from './Footer10';
 import Footer11 from './Footer11';
@@ -20,4 +19,9 @@ import Footer19 from './Footer19';
 import Footer20 from './Footer20';
 import Footer21 from './Footer21';
 import Footer22 from './Footer22';
-export { Footer1, Footer2, Footer3, Footer4, Footer5, Footer6, Footer7, Footer11, Footer9, Footer10, Footer11, Footer12, Footer13, Footer14, Footer15, Footer16, Footer17, Footer18, Footer19, Footer20, Footer21, Footer22 };
+
+export {
+  Footer1, Footer2, Footer3, Footer4, Footer5, Footer6, Footer7,
+  Footer9, Footer10, Footer11, Footer12, Footer13, Footer14, Footer15,
+  Footer16, Footer17, Footer18, Footer19, Footer20, Footer21, Footer22
+};

@@ -56,7 +56,15 @@ const Ourvalues = () => {
           <div className="container pt-10 pb-25 pt-md-14 pb-md-23 text-center">
             <div className="row">
               <div className="col-xl-5 mx-auto mb-6">
-                <h1 className="display-1 mb-3 text-gradient gradient-8">Our Values</h1>
+              <h1
+  className="fs-32 text-uppercase mb-3"
+  style={{
+    background: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    fontWeight: 'bold',
+  }}
+>Our Values</h1>
                
               </div>
             </div>
@@ -68,10 +76,10 @@ const Ourvalues = () => {
       }
         <section className="wrapper bg-light">
           <div className="container pb-12 pb-md-4">
-            <div className="row text-center mb-12 mb-md-15">
+            <div className="row text-center mb-1 mb-md-1">
               <div className="col-md-12 offset-md-1 col-lg-8 offset-lg-2 mt-n18 mt-md-n22">
-                <figure>
-                  <img alt="" className="w-auto" src="/img/photos/bg12.jpg" srcSet="/img/photos/bg12.jpg" />
+                <figure style={{ width: '106%', height: '100%' }}>
+                  <img alt="" className="w-auto" src="/img/photos/ourvalue.png" srcSet="/img/photos/ourvalue.png" />
                 </figure>
               </div>
             </div>
@@ -82,7 +90,15 @@ const Ourvalues = () => {
               </div> */}
 
               <div className="col-lg-20 text-center">
-                <h3 className="display-5 mb-5 text-uppercase text-gradient gradient-8 mb-3">
+              <h3
+  className="fs-32 text-uppercase mb-3"
+  style={{
+    background: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    fontWeight: 'bold',
+  }}
+>
                 Business, as I have seen it, places one great demand on you: it needs
                 you to self-impose a framework of ethics, values, fairness and
                 objectivity on yourself at all times.” - Ratan N Tata

@@ -170,8 +170,8 @@ const Navbar = (props) => {
           <Buttono
             title="Download Brochure"
             className="btn btn-primary"
-            style={{ backgroundColor: ' #04b5ac', borderColor: ' #04b5ac' }}
-            downloadLink="https://pdfobject.com/pdf/sample.pdf"
+            style={{ backgroundColor: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)', borderColor: ' #04b5ac' }}
+            downloadLink="https://drive.google.com/file/d/1YbXu5NtP98UmbKWDTNfVw4Aj8RJefGev/view?usp=sharing"
           />
         </div>
       </div>
@@ -200,7 +200,7 @@ const Navbar = (props) => {
       {info && <Info />}
       {search && <Search />}
       {cart && <MiniCart />}
-      <div className='mb-10' style={{ borderBottom: '2px solid rgb(74, 226, 163)', margin: '0' }} />
+      <div  style={{ borderBottom: '2px solid rgb(74, 226, 163)', margin: '0' }} />
       <div></div>
     </Fragment>
   );
