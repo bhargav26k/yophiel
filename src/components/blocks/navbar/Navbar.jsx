@@ -167,12 +167,16 @@ const Navbar = (props) => {
 
         {/* Download Brochure button on large screens (hidden on mobile) */}
         <div className="ms-auto d-none d-lg-block">
-          <Buttono
-            title="Download Brochure"
-            className="btn btn-primary"
-            style={{ backgroundColor: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)', borderColor: ' #04b5ac' }}
-            downloadLink="https://drive.google.com/file/d/1YbXu5NtP98UmbKWDTNfVw4Aj8RJefGev/view?usp=sharing"
-          />
+        <Buttono
+  title="Download Brochure"
+  className="btn btn-primary"
+  style={{
+    background: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)',
+    border: 'none' // Optional: Remove border if needed
+  }}
+  downloadLink="https://drive.google.com/file/d/1YbXu5NtP98UmbKWDTNfVw4Aj8RJefGev/view?usp=sharing"
+/>
+
         </div>
       </div>
       

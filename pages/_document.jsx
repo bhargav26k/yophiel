@@ -3,7 +3,7 @@ export default class SandBox extends Document {
   render() {
     return <Html lang="en">
         <Head>
-          <link rel="shortcut icon" href="/img/yophiel-fav.png" type="image/png" />
+          <link rel="shortcut icon" href="/img/Icon1.png" type="image/png" />
         </Head>
 
         <body>
