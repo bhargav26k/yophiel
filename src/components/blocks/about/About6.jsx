@@ -20,7 +20,7 @@ const About6 = () => {
         <p className="lead fs-lg">
           Welcome to the global arena of chemicals, engineering, and resource management, where
           excellence, innovation, and high-performance solutions converge to shape a more sustainable
-          and technologically advanced future.
+          and Technologically advanced future.
         </p>
 
         <p className="lead mb-6">
