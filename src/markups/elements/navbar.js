@@ -3,6 +3,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 
 <Navbar language button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />} />
 `;
+
 const markup2 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -13,6 +14,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
 />
 `;
+
 const markup3 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -22,6 +24,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
 />
 `;
+
 const markup4 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -32,6 +35,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
 />
 `;
+
 const markup5 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -43,6 +47,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
 />
 `;
+
 const markup6 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -57,6 +62,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   }
 />
 `;
+
 const markup7 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -72,6 +78,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   }
 />
 `;
+
 const markup8 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -79,6 +86,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   info
   navOtherClass="navbar-other ms-lg-4"
   navClassName="navbar navbar-expand-lg classic navbar-light navbar-bg-light"
+ Newsletter
   button={
     <a href="#" data-bs-toggle="modal" data-bs-target="#modal-signin" className="btn btn-sm btn-primary rounded-pill">
       Sign In
@@ -86,6 +94,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   }
 />
 `;
+
 const markup9 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -101,6 +110,7 @@ import NextLink from 'components/reuseable/links/NextLink';
   }
 />
 `;
+
 const markup10 = `import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 
@@ -117,4 +127,85 @@ import NextLink from 'components/reuseable/links/NextLink';
 />
 `;
 
-export { markup1, markup2, markup3, markup4, markup5, markup6, markup7, markup8, markup9, markup10};
+const markup11 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  language
+  navClassName="navbar navbar-expand-lg center-logo transparent navbar-light"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+const markup12 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  language
+  logoAlt="logo-light"
+  navClassName="navbar navbar-expand-lg center-logo transparent navbar-dark"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+const markup13 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  language
+  navClassName="navbar navbar-expand-lg center-logo navbar-light navbar-bg-light"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+const markup14 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  language
+  logoAlt="logo-light"
+  navClassName="navbar navbar-expand-lg center-logo navbar-dark navbar-bg-dark"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+const markup15 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  extended
+  language
+  navClassName="navbar navbar-expand-lg extended navbar-light navbar-bg-light"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+const markup16 = `import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
+
+<Navbar
+  extended
+  language
+  navClassName="navbar navbar-expand-lg extended navbar-light navbar-bg-light alternative"
+  button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
+/>
+`;
+
+export {
+  markup1,
+  markup2,
+  markup3,
+  markup4,
+  markup5,
+  markup6,
+  markup7,
+  markup8,
+  markup9,
+  markup10,
+  markup11,
+  markup12,
+  markup13,
+  markup14,
+  markup15,
+  markup16
+};

@@ -8,21 +8,18 @@ const CustomPrevArrow = ({ onClick }) => (
     className="slick-prev slick-arrow"
     onClick={onClick}
     style={{
-      left: '25px',
+      left: '10px',
       zIndex: 2,
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      borderRadius: '50%',
+      backgroundColor: 'rgba(0, 0, 0, 0)',
       border: 'none',
-      width: '40px',
-      height: '40px',
+      width: '35px',
+      height: '35px',
       color: '#fff',
       cursor: 'pointer',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
       position: 'absolute',
       top: '50%',
       transform: 'translateY(-50%)',
+      fontSize: '24px',
     }}
   >
     &#10094;
@@ -35,21 +32,18 @@ const CustomNextArrow = ({ onClick }) => (
     className="slick-next slick-arrow"
     onClick={onClick}
     style={{
-      right: '25px',
+      right: '10px',
       zIndex: 2,
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      borderRadius: '50%',
+      backgroundColor: 'rgba(0, 0, 0, 0)',
       border: 'none',
-      width: '40px',
-      height: '40px',
+      width: '35px',
+      height: '35px',
       color: '#fff',
       cursor: 'pointer',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
       position: 'absolute',
       top: '50%',
       transform: 'translateY(-50%)',
+      fontSize: '24px',
     }}
   >
     &#10095;
@@ -67,17 +61,6 @@ const Hero18 = () => {
     autoplaySpeed: 3000,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
-    centerMode: true,
-    centerPadding: '0px',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: false,
-        },
-      },
-    ],
   };
 
   const slides = [
@@ -85,82 +68,46 @@ const Hero18 = () => {
     { id: 2, image: '/img/photos/Slider2.jpg' },
     { id: 3, image: '/img/photos/Slider3.jpg' },
     { id: 4, image: '/img/photos/Slider4.jpg' },
-    { id: 5, image: '/img/photos/Slider5.jpg' },
   ];
 
   return (
-    <section
-      style={{
-        width: '100%',
-        margin: '0 auto',
-        overflow: 'hidden',
-        position: 'relative',
-         // Gradient background
-      }}
-    >
-      <Slider {...settings}>
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            style={{
-              outline: 'none',
-              position: 'relative',
-            }}
-          >
-            <img
-              src={slide.image}
-              alt={`Slide ${slide.id}`}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                transform: 'scale(0.95)',
-                transition: 'transform 0.3s ease',
-              }}
-              className="slider-image"
-            />
-          </div>
-        ))}
-      </Slider>
+    <section style={{ width: '100%', maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center' }}>
+      {/* Left Side - Text Section with Sloped Background */}
+      <div style={{
+  width: '230%',
 
-      <style jsx global>{`
-        .slider-image {
-          opacity: 0.6;
-          transition: opacity 0.3s ease, transform 0.3s ease;
-        }
+  padding: '100px',
+  background: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)',
+  textAlign: 'left',
+  clipPath: 'polygon(0 0, 80% 0, 100% 100%, 0% 120%)', // Sloped effect
+  color: 'white' // Ensure text is visible on gradient background
+}}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Your Title Here</h2>
+        <p style={{ fontSize: '1rem', lineHeight: '1.6' }}>
+          Your description text goes here. Add more details about your content to match your requirements.
+        </p>
+      </div>
 
-        .slick-center .slider-image {
-          opacity: 1;
-          transform: scale(1);
-        }
-
-        .slick-dots {
-          bottom: 30px !important;
-        }
-
-        .slick-dots li button:before {
-          color: #fff !important;
-          font-size: 12px !important;
-        }
-
-        @media (max-width: 768px) {
-          .slider-image {
-            height: 60vh !important;
-            transform: scale(1) !important;
-            opacity: 1 !important;
-          }
-
-          .slick-dots {
-            bottom: 15px !important;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .slider-image {
-            height: 50vh !important;
-          }
-        }
-      `}</style>
+      {/* Right Side - Image Slider */}
+      <div style={{ width: '50%', position: 'relative' }}>
+        <Slider {...settings}>
+          {slides.map((slide) => (
+            <div key={slide.id} style={{ display: 'flex', justifyContent: 'center' }}>
+              <img
+                src={slide.image}
+                alt={`Slide ${slide.id}`}
+                style={{
+                  width: '100%',
+                  height: '400px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  clipPath: 'polygon(100% 0, 0 100%, 0 0, 0% 1%)',
+                }}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

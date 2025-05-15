@@ -1,63 +1,79 @@
-import { Fragment } from 'react';
-import { Tiles11 } from 'components/elements/tiles';
-import ListColumn from 'components/reuseable/ListColumn'; // -------- data -------- //
+import { Fragment } from "react";
+import { Tiles11 } from "components/elements/tiles";
+import ListColumn from "components/reuseable/ListColumn"; 
 
-import { aboutList2, aboutList3 } from 'data/about';
+import { aboutList2, aboutList3 } from "data/about";
 
 const About19 = () => {
-  return <Fragment>
-      <div className="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mb-10 mb-md-12">
-        
-
-        <div className="col-lg-11">
-          <h3 className="display-4 mb-2 text-uppercase  mb-5 text-center" style={{background:'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)' , color:'white'}}> Welcome to the forefront of Chemicals and Engineering.</h3>
-          <p className="mb-6">
-<strong style={{background:'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)' , color:'white'}}> Yophiel Internationals</strong>   is a global leader in chemical distribution and engineering services, established in India in 2023.
-  <br></br>
-  Built on ethics and integrity, we aim to lead the industry with excellence.
-  <br></br>
-  We offer energy management, maintenance contracts, tolling, blending, and raw material procurement.
-  <br></br>
-  Our expert team and global network provide specialized solutions to boost productivity and profitability.
-</p>
-
-
-          {/* <ListColumn rowClass="gx-xl-8" list={aboutList2} /> */}
-        </div>
+  return (
+    <Fragment>
+      {/* Centered Main Image */}
+      <div className="d-flex justify-content-center my-4">
+        <img 
+          src="/img/main1.png" 
+          alt="Main Image" 
+          className="img-fluid"
+          style={{ maxWidth: "100%", height: "auto" }} 
+        />
       </div>
 
-      <div className="row gx-lg-8 gx-xl-12 gy-6 mb-14 mb-md-18">
-  {aboutList3.map(({ id, title, description }) => (
-    <div className="col-lg-4" key={id}>
-      <div className="d-flex flex-row">
-        <div>
-          {/* Apply the gradient to the circle */}
-          <div
-            className="icon btn btn-circle pe-none me-4"
-            style={{
-              background: 'linear-gradient(135deg, rgb(0, 166, 228) 0%, rgb(121, 191, 30) 100%)',
-              color: 'white', // Ensure the text is visible
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '40px', // Adjust size as needed
-              height: '40px', // Adjust size as needed
-              borderRadius: '50%', // Ensure it remains a circle
-            }}
-          >
-            <span className="number fs-18">{id}</span>
-          </div>
+      {/* ABOUT YOPHIEL SECTION */}
+      <section className="container py-5">
+        <div className="row">
+          {[
+            "Welcome from the global arena of Chemicals and Engineering, where excellence, innovation, and performance meet.",
+            "Yophiel is led by a team of experts and professionals who are uniquely positioned to serve the diverse needs of its customers.",
+            "The head office is in Pune with subsidiary operations in UAE and KSA, covering markets in Asia Pacific, Middle East, and Africa.",
+            "We take pride in our in-house capabilities, encompassing engineering, manufacturing, and high-quality process equipment supply."
+          ].map((text, index) => (
+            <div key={index} className="col-md-6 d-flex align-items-start mb-3">
+              <span className="icon me-3">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="20" height="20" rx="5" fill="url(#gradient)" />
+                  <defs>
+                    <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#00A1E4" />
+                      <stop offset="100%" stopColor="#00D664" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+              <span>{text}</span>
+            </div>
+          ))}
         </div>
+      </section>
 
-        <div>
-          <h4 >{title}</h4>
-          <p className="mb-2">{description}</p>
-        </div>
+      {/* Who We Are Section - Centered Image */}
+      <div className="d-flex justify-content-center my-4">
+        <img
+          src="/img/whoweare.png"
+          alt="Who We Are"
+          className="img-fluid"
+          style={{ maxWidth: "80%", height: "auto" }}
+        />
       </div>
-    </div>
-  ))}
-</div>
-    </Fragment>;
+
+      {/* DELIVERING CHEMICALS GLOBALLY SECTION */}
+      <section className="wrapper bg-light py-5 text-center">
+        <h3 className="text-success fw-bold">DELIVERING CHEMICALS GLOBALLY</h3>
+        <p>
+          One of the leading suppliers of Specialty Chemicals, Oils, Ingredients, 
+          and Process & Mechanical Engineering Solutions for industries such as:
+        </p>
+        <p className="fw-bold">
+          Oil & Gas, Grease & Lubricants, Plastics & PVC, Home & Personal Care, 
+          Rubber & Wastewater Treatment.
+        </p>
+      </section>
+    </Fragment>
+  );
 };
 
 export default About19;
