@@ -1,4 +1,3 @@
-import SocialLinks from 'components/reuseable/SocialLinks';
 import NextLink from 'components/reuseable/links/NextLink';
 import footerNav from 'data/footer';
 
