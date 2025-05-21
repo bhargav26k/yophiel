@@ -79,7 +79,9 @@ const About = () => {
       {
       /* ========== footer section ========== */
     }
+    <footer>
       <Footer11 />
+      </footer>
     </Fragment>;
 };
 
