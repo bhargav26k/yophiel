@@ -44,15 +44,18 @@ const navigations = [{
       title: 'Services II',
       url: '/services-2'
     }]
-  }, {
+  },
+   {
     id: 22,
     url: null,
     title: 'About',
-    children: [{
-      id: 221,
-      title: 'About I',
-      url: '/about-1'
-    }, {
+    children: [
+    //   {
+    //   id: 221,
+    //   title: 'About I',
+    //   url: '/about-1'
+    // }, 
+    {
       id: 222,
       title: 'About II',
       url: '/about-2'
