@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import Plyr from 'plyr-react';
 import DocLayout from 'components/layouts/DocLayout';
 import CodeHighlight from 'components/reuseable/CodeHighlight'; // -------- markups -------- //
@@ -18,7 +19,7 @@ const quickAccess = [{
   url: 'snippet-4'
 }];
 
-const MediaPlayer = () => {
+const MediaPlayer = dynamic(() => {
   return <DocLayout pageTitle="Media Player" quickAccssLinks={quickAccess} descriptionClass="lead px-xxl-10" headingColClass="col-md-9 col-lg-7 col-xl-7 mx-auto" description={<>
           Examples on how to add videos with the included responsive media player. For further instructions on the
           plugin please visit{' '}
@@ -159,6 +160,6 @@ const MediaPlayer = () => {
         </div>
       </section>
     </DocLayout>;
-};
+});
 
 export default MediaPlayer;

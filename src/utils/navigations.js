@@ -50,11 +50,11 @@ const navigations = [{
     url: null,
     title: 'About',
     children: [
-    //   {
-    //   id: 221,
-    //   title: 'About I',
-    //   url: '/about-1'
-    // }, 
+      {
+      id: 221,
+      title: 'About I',
+      url: '/about-1'
+    }, 
     {
       id: 222,
       title: 'About II',
