@@ -1,5 +1,8 @@
 import { Fragment } from 'react';
-import Plyr from 'plyr-react'; // -------- custom component -------- //
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), { ssr: false });
+ // -------- custom component -------- //
 
 import { FAQ8 } from 'components/blocks/faq';
 import { Hero29 } from 'components/blocks/hero';

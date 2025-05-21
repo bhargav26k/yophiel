@@ -1,4 +1,7 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), { ssr: false });
+
 
 const Banner5 = () => {
   return <section className="wrapper bg-soft-primary">

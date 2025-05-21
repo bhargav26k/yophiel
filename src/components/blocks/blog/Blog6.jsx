@@ -1,4 +1,7 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), { ssr: false });
+
 import Image from 'next/image'; // -------- custom components -------- //
 
 import Pagination from 'components/reuseable/Pagination';
