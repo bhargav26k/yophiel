@@ -184,7 +184,7 @@ const Navbars = () => {
         </div>
       </Block>
 
-      <Block id={11} markup={all.markup11}>
+      {/* <Block id={11} markup={all.markup11}>
         <div className="container pt-15 pt-md-17">
           <h2 className="mb-0">Center Logo - Transparent Background</h2>
         </div>
@@ -263,7 +263,7 @@ const Navbars = () => {
         <div className="container-fluid pt-10 pt-md-12 pb-12 pb-md-14 px-xxl-10 text-center">
           <img src="/img/docs/navbars/navbar-17.png" alt="navbar-1" className="img-fluid" />
         </div>
-      </Block>
+      </Block> */}
     </BlockLayout>;
 };
 
